@@ -1,8 +1,15 @@
 <!DOCTYPE html>
-<link rel="stylesheet" type="text/css" href=main.css">
 
 <html>
-<div id="electronics" class="tabcontent">
+
+
+
+	<head>
+	<link rel="stylesheet" href="main.css">
+		<title>Hank Quinlan, Horrible Cop</title>
+	</head>
+	
+	<div id="electronics" class="tabcontent">
   <h3>electroics stuff</h3>
   <p>arduinos , hexapods and joes</p>
 </div>
@@ -22,27 +29,6 @@
 <button class="tablink" onclick="openCity('code', this, 'green')">code</button>
 <button class="tablink" onclick="openCity('andrid', this, 'blue')">android</button>
 
-<script>
-function openCity(cityName,elmnt,color) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-    }
-    document.getElementById(cityName).style.display = "block";
-    elmnt.style.backgroundColor = color;
-
-}
-document.getElementById("defaultOpen").click();
-</script>
-
-	<head>
-		<title>Hank Quinlan, Horrible Cop</title>
-	</head>
 	<body>
 		<nav>
     		<ul>
