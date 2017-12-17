@@ -21,7 +21,7 @@ body {
 .tabcontent{
     color: white;
     display: none;
-    padding: 50px;
+    padding: 25px;
     text-align: center;
 }
 #electronics {background-color:red;}
