@@ -11,7 +11,7 @@ body {
     cursor: pointer;
     padding: 14px 16px;
     font-size: 17px;
-    width: 33%;
+    width: 20%;
 }
 
 .tablink:hover {
@@ -26,5 +26,7 @@ body {
 }
 #electronics {background-color:red;}
 #code {background-color:green;}
-#android {background-color:blue;}
+#welcome {background-image: url("paper.gif");}
+#android url(http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif);
+background-size: cover;}
 #other {background-color:orange;}
