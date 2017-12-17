@@ -26,7 +26,6 @@ body {
 }
 #electronics {background-color:red;}
 #code {background-color:green;}
-#welcome {background-image: url("paper.gif");}
-#android url(http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif);
-background-size: cover;}
+#welcome {background-image: url("https://en.wikipedia.org/wiki/GIF#/media/File:Rotating_earth_(large).gif");}
+#android {background-color:blue;}
 #other {background-color:orange;}
