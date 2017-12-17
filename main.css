@@ -26,6 +26,6 @@ body {
 }
 #electronics {background-color:red;}
 #code {background-color:green;}
-#welcome {background-image: url("https://en.wikipedia.org/wiki/GIF#/media/File:Rotating_earth_(large).gif");}
+#welcome {background-image: url(rf.gif);}
 #android {background-color:blue;}
 #other {background-color:orange;}
