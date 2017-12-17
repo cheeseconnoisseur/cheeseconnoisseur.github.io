@@ -1,7 +1,7 @@
 body {
 	margin: 60px auto;
 }
-.tablink {
+tablink {
     background-color: #555;
     color: white;
     float: left;
@@ -13,11 +13,11 @@ body {
     width: 25%;
 }
 
-.tablink:hover {
+tablink:hover {
     background-color: #777;
 }
 
-.tabcontent {
+tabcontent {
     color: white;
     display: none;
     padding: 50px;
