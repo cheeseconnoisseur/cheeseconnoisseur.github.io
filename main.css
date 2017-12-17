@@ -23,7 +23,11 @@ body {
     display: none;
     padding: 40px;
     text-align: center;
+
 }
+
+#welcome { position:centre}
+
 #electronics {background-color:red;}
 #code {background-color:green;}
 #welcome {background: url(rf.gif) center;}
