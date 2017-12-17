@@ -28,8 +28,8 @@ body {
 
 #welcome {text-align: center;}
 
-#electronics {background-color:red;}
-#code {background-color:green;}
+#electronics {background-color:#FF5722;}
+#code {background-color:#B2FF59;}
 #welcome {background: url(rf.gif) center;}
-#android {background-color:blue;}
-#other {background-color:orange;}
+#android {background-color:#42A5F5;}
+#other {background-color:FFA726;}
