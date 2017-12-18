@@ -24,7 +24,7 @@ document.getElementById("defaultOpen").click();
 
 
 
-function androidel() {
+function androidshow() {
 var divOne = document.getElementById("bigman");
 divOne.style.display='block';
 }
@@ -34,12 +34,32 @@ var divOne = document.getElementById("bigman");
 divOne.style.display='none';
 }
 
-function codeel() {
+function codeshow() {
 var divOne = document.getElementById("codeman");
 divOne.style.display='block';
 }
 
 function codehide() {
 var divOne = document.getElementById("codeman");
+divOne.style.display='none';
+}
+
+function electronicsshow() {
+var divOne = document.getElementById("electronicsman");
+divOne.style.display='block';
+}
+
+function electronicshide() {
+var divOne = document.getElementById("electronicsman");
+divOne.style.display='none';
+}
+
+function othershow() {
+var divOne = document.getElementById("otherman");
+divOne.style.display='block';
+}
+
+function otherhide() {
+var divOne = document.getElementById("otherman");
 divOne.style.display='none';
 }

@@ -41,6 +41,9 @@ td {
 }
 #bigman {display: none;}
 #codeman {display: none;}
+#electronicsman {display:none}
+#otherman {display:none}
+#joescolour {background-color:#00979F}
 
 #welcome {text-align: center;}
 

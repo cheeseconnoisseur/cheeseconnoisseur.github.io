@@ -37,11 +37,11 @@
 
 
 
-<button class="tablink" onclick="openColour('electronics', this, '#FF5722')" >electronics</button>
-<button class="tablink" onclick="openColour('code', this, '#B2FF59');codeel();androidhide()">code</button>
-<button class="tablink" onclick="openColour('welcome', this, '#673AB7')" id="defaultOpen" >welcome</button>
-<button class="tablink" onclick="openColour('android', this, '#42A5F5');androidel();codehide()">android</button>
-<button class="tablink" onclick="openColour('other', this, '#FFA726')">other</button>
+<button class="tablink" onclick="openColour('electronics', this, '#FF5722');electronicsshow();codehide();androidhide();otherhide()" >electronics</button>
+<button class="tablink" onclick="openColour('code', this, '#B2FF59');codeshow();androidhide();electronicshide();otherhide()">code</button>
+<button class="tablink" onclick="openColour('welcome', this, '#673AB7');electronicshide();codehide();androidhide();otherhide()" id="defaultOpen" >welcome</button>
+<button class="tablink" onclick="openColour('android', this, '#42A5F5');androidshow();codehide();electronicshide();otherhide">android</button>
+<button class="tablink" onclick="openColour('other', this, '#FFA726');othershow();androidhide();codehide();electronicshide()">other</button>
 
 	<body>
 	<script src="code.js"></script>
@@ -95,6 +95,45 @@
 	  <h2> a virtual pet fish
 	  <h3>a virtual fish pet coded in vb
     </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  
+    <div id="electronicsman">
+			<table>
+  <tbody><tr>
+    <td>
+      <a href="http://joeiddon.me/club/">
+      <img class="project_img" src="http://joeiddon.me/images/finnishedTop.jpg">
+      </a>
+	  <h2> (arduino club)snakegame using arduino
+	  <h3>classic snake game
+    </td>
+    
+    <td>
+      <a href="/code/petfish">
+      <img class="project_img" src="imgs/blink.gif">
+      </a>
+	  <h2> hexapod
+	  <h3>...in progress..
+    </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  
+   <div id="otherman">
+			<table>
+  <tbody><tr>
+    <td>
+      <a href="http://joeiddon.me">
+      <img id="joescolour" class="project_img" src="https://raw.githubusercontent.com/RoadKillCat/roadkillcat.github.io/master/images/logo_white.png">
+      </a>
+	  <h2> god himself
+	  <h3>sd cards here
+    </td>
+  
   </tr>
   </tbody>
   </table>
