@@ -106,3 +106,14 @@ td {
 #android {background-color:#42A5F5;}
 #other {background-color:#FFA726;}
 #other2 {background-color:#FFA726;}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    display: none;
+	position:fixed;
+	z-index:-1
+}
