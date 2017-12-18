@@ -21,5 +21,9 @@ function openColour(cityName, elmnt, color) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+
+function bye {
 var divOne = document.getElementsByClassName("project_img");
 divOne.style.display='none';
+}
