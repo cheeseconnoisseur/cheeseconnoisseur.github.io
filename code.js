@@ -63,3 +63,13 @@ function otherhide() {
 var divOne = document.getElementById("otherman");
 divOne.style.display='none';
 }
+
+function introshow() {
+var divOne = document.getElementById("introman");
+divOne.style.display='block';
+}
+
+function introhide() {
+var divOne = document.getElementById("introman");
+divOne.style.display='none';
+}
