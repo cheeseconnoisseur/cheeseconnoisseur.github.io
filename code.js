@@ -28,3 +28,18 @@ function androidel() {
 var divOne = document.getElementById("bigman");
 divOne.style.display='block';
 }
+
+function androidhide() {
+var divOne = document.getElementById("bigman");
+divOne.style.display='none';
+}
+
+function codeel() {
+var divOne = document.getElementById("codeman");
+divOne.style.display='block';
+}
+
+function codehide() {
+var divOne = document.getElementById("codeman");
+divOne.style.display='none';
+}

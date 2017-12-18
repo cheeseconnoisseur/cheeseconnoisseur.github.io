@@ -39,9 +39,11 @@ td {
 	margin: 0 auto;
 	box-shadow: 0 0 60px black;
 }
+#bigman {display: none;}
+#codeman {display: none;}
 
 #welcome {text-align: center;}
-#bigman {display: none;}
+
 #electronics {background-color:#FF5722;}
 #code {background-color:#B2FF59;}
 #welcome {background: url(imgs/rf.gif) center;}

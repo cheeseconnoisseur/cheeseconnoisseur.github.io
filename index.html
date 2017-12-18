@@ -38,9 +38,9 @@
 
 
 <button class="tablink" onclick="openColour('electronics', this, '#FF5722')" >electronics</button>
-<button class="tablink" onclick="openColour('code', this, '#B2FF59')">code</button>
+<button class="tablink" onclick="openColour('code', this, '#B2FF59');codeel();androidhide()">code</button>
 <button class="tablink" onclick="openColour('welcome', this, '#673AB7')" id="defaultOpen" >welcome</button>
-<button class="tablink" onclick="openColour('android', this, '#42A5F5');androidel()">android</button>
+<button class="tablink" onclick="openColour('android', this, '#42A5F5');androidel();codehide()">android</button>
 <button class="tablink" onclick="openColour('other', this, '#FFA726')">other</button>
 
 	<body>
@@ -52,9 +52,9 @@
 		
     		</div><!-- /.blurb -->
 			
+			
 			<div id="bigman">
 			<table>
-  
   <tbody><tr>
     <td>
       <a href="/android/mdp">
@@ -75,6 +75,33 @@
   </tbody>
   </table>
   </div>
+  
+  
+  <div id="codeman">
+			<table>
+  <tbody><tr>
+    <td>
+      <a href="/code/changecalc">
+      <img class="project_img" src="imgs/cashier.jpg">
+      </a>
+	  <h2> change calculator
+	  <h3>a console £ change calculator with customizable settings
+    </td>
+    
+    <td>
+      <a href="/code/petfish">
+      <img class="project_img" src="imgs/fish.jpg">
+      </a>
+	  <h2> a virtual pet fish
+	  <h3>a virtual fish pet coded in vb
+    </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  
+  
+  
 		</div><!-- /.container -->
 	</body>
 </html>
