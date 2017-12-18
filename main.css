@@ -41,9 +41,9 @@ td {
 }
 
 #welcome {text-align: center;}
-
+#bigman {display: none;}
 #electronics {background-color:#FF5722;}
 #code {background-color:#B2FF59;}
-#welcome {background: url(rf.gif) center;}
+#welcome {background: url(imgs/rf.gif) center;}
 #android {background-color:#42A5F5;}
 #other {background-color:#FFA726;}
