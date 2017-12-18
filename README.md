@@ -1,3 +1,2 @@
-# cheeseconnoisseur.github.io
-arturodezon.me
+# arturo.me
 website for projects and stuff
