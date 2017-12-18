@@ -28,6 +28,7 @@ body {
     width: 100%;
 
 }
+
 a {
 	font-family: courier;
     color: white;
@@ -44,6 +45,7 @@ display: inline-block;}
 a:hover{
     background-color: #4CAF50;
 }
+
 .buttonrow {
 	
   width: 100%;
@@ -76,21 +78,27 @@ a:hover{
           box-shadow: 0px 7px 4px -2px #1a1a1a;}
 
 }
-td {
-	padding: 25px;
-	width: 590px;
-	height: 330px;
+tr{
+	width:100%
 }
 
+td {
+	padding: 30px;
+	width: 50%;
+	height: 50%;
+   margin: 0 auto;
+}
+
+
 .project_img {
-	width: auto;
+
 	max-width: 100%;
 	max-height: 100%;
 	display: block;
 	margin: 0 auto;
-	box-shadow: 0 0 60px black;
+	box-shadow: 0 0 80px black;
 }
-
+#off-button {display:none}
 
 #bigman {display: none;}
 #codeman {display: none;}
@@ -106,6 +114,8 @@ td {
 #android {background-color:#42A5F5;}
 #other {background-color:#FFA726;}
 #other2 {background-color:#FFA726;}
+
+/*code fom here on downwards courtesy of shreyas: https://github.com/shreyaspandit/html5-fireworks*/
 
 * {
     margin: 0;

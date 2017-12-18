@@ -1,3 +1,101 @@
+
+
+function openColour(cityName, elmnt, color) {
+    // Hide all elements with class="tabcontent" by default */
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Remove the background color of all tablinks/buttons
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+
+    // Show the specific tab content
+    document.getElementById(cityName).style.display = "block";
+
+    // Add the specific color to the button used to open the tab content
+    elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+
+function androidshow() {
+var docelement = document.getElementById("bigman");
+docelement.style.display='block';
+}
+
+function androidhide() {
+var docelement = document.getElementById("bigman");
+docelement.style.display='none';
+}
+
+function codeshow() {
+var docelement = document.getElementById("codeman");
+docelement.style.display='block';
+}
+
+function codehide() {
+var docelement = document.getElementById("codeman");
+docelement.style.display='none';
+}
+
+function electronicsshow() {
+var docelement = document.getElementById("electronicsman");
+docelement.style.display='block';
+}
+
+function electronicshide() {
+var docelement = document.getElementById("electronicsman");
+docelement.style.display='none';
+}
+
+function othershow() {
+var docelement = document.getElementById("otherman");
+docelement.style.display='block';
+}
+
+function otherhide() {
+var docelement = document.getElementById("otherman");
+docelement.style.display='none';
+}
+
+function introshow() {
+var docelement = document.getElementById("introman");
+docelement.style.display='block';
+}
+
+function introhide() {
+var docelement = document.getElementById("introman");
+docelement.style.display='none';
+}
+
+function fire() {
+var docelement = document.getElementById("canvas");
+	docelement.style.display='block';
+var docelement = document.getElementById("off-button");
+	docelement.style.display='block';
+var docelement = document.getElementById("on-button");
+	docelement.style.display='none';
+}
+
+function fireoff() {
+var docelement = document.getElementById("canvas");
+	docelement.style.display='none';
+var docelement = document.getElementById("on-button");
+	docelement.style.display='block';
+var docelement = document.getElementById("off-button");
+	docelement.style.display='none';
+}
+
+//code from here down is courtesy of shreyas : https://github.com/shreyaspandit/html5-fireworks
+
 window.onload = function() {
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
@@ -200,87 +298,3 @@ window.onload = function() {
     window.requestAnimationFrame(draw);
 
 };
-
-function openColour(cityName, elmnt, color) {
-    // Hide all elements with class="tabcontent" by default */
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-
-    // Remove the background color of all tablinks/buttons
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-    }
-
-    // Show the specific tab content
-    document.getElementById(cityName).style.display = "block";
-
-    // Add the specific color to the button used to open the tab content
-    elmnt.style.backgroundColor = color;
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-
-
-
-function androidshow() {
-var divOne = document.getElementById("bigman");
-divOne.style.display='block';
-}
-
-function androidhide() {
-var divOne = document.getElementById("bigman");
-divOne.style.display='none';
-}
-
-function codeshow() {
-var divOne = document.getElementById("codeman");
-divOne.style.display='block';
-}
-
-function codehide() {
-var divOne = document.getElementById("codeman");
-divOne.style.display='none';
-}
-
-function electronicsshow() {
-var divOne = document.getElementById("electronicsman");
-divOne.style.display='block';
-}
-
-function electronicshide() {
-var divOne = document.getElementById("electronicsman");
-divOne.style.display='none';
-}
-
-function othershow() {
-var divOne = document.getElementById("otherman");
-divOne.style.display='block';
-}
-
-function otherhide() {
-var divOne = document.getElementById("otherman");
-divOne.style.display='none';
-}
-
-function introshow() {
-var divOne = document.getElementById("introman");
-divOne.style.display='block';
-}
-
-function introhide() {
-var divOne = document.getElementById("introman");
-divOne.style.display='none';
-}
-
-function fire() {
-var divOne = document.getElementById("canvas");
-if (divOne.style.display='none'){
-	divOne.style.display='block';
-} else {
-	divOne.style.display='none';}
-}
