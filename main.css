@@ -124,6 +124,10 @@ a:hover{
 	font-family: courier;
     background-color: #777;
 }
+.tablink2:hover {
+	font-family: courier;
+    background-color: #777;
+}
 /*styling for the top banner with the info when a tab is selected*/
 .tabcontent{
 	font-family: courier;
