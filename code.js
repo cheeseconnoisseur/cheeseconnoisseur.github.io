@@ -71,7 +71,7 @@ var docelement = document.getElementById("intro");
 docelement.style.display='none';
 }
 function introshow() {
-var docelement = document.getElementById("introman");
+var docelement = document.getElementById("intro");
 docelement.style.display='block';
 }
 

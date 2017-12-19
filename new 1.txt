@@ -1,0 +1,110 @@
+function onangleshow() {
+var docelement = document.getElementById("on-angle");
+docelement.style.display='block';
+}
+function onanglehide() {
+var docelement = document.getElementById("on-angle");
+docelement.style.display='none';
+}
+function offangleshow() {
+var docelement = document.getElementById("off-angle");
+docelement.style.display='block';
+}
+function offanglehide() {
+var docelement = document.getElementById("off-angle");
+docelement.style.display='none';
+}
+function anglexshow() {
+var docelement = document.getElementById("anglex");
+docelement.style.display='block';
+}
+function anglexhide() {
+var docelement = document.getElementById("anglex");
+docelement.style.display='none';
+}
+function angleyshow() {
+var docelement = document.getElementById("angley");
+docelement.style.display='block';
+}
+function angleyhide() {
+var docelement = document.getElementById("angley");
+
+function fire() {
+var docelement = document.getElementById("canvas");
+	docelement.style.display='block';
+@@ -83,6 +111,7 @@ var docelement = document.getElementById("off-button");
+	docelement.style.display='block';
+var docelement = document.getElementById("on-button");
+	docelement.style.display='none';
+	onangleshow()
+}
+
+function fireoff() {
+@@ -92,6 +121,8 @@ var docelement = document.getElementById("on-button");
+	docelement.style.display='block';
+var docelement = document.getElementById("off-button");
+	docelement.style.display='none';
+	offanglehide()
+	onanglehide()
+}
+
+for(var i = 0; i < 100; i++) {
+                new Explosion(tx, ty);
+				var element = document.getElementById("anglex");
+element.innerHTML = (tx);
+var element = document.getElementById("angley");
+element.innerHTML = (ty);
+            }
+			
+			<button id="off-button"class="tablink4 button" onclick="fireoff()"><span><h1>fireworks:off</h1></span></button>
+  <button id="on-angle" class="tablink3 button" onclick="anglexshow();angleyshow();onanglehide();offangleshow()"><span><h1>fire x/y:on</h1></span> </button>
+  <button id="off-angle"class="tablink3 button" onclick="anglexhide();angleyhide();offanglehide();onangleshow()"><span><h1>fire x/y:off</h1></span></button>
+  
+   <footer>
+  <h1 id = "anglex">angle</h1>
+  <h1 id = "angley">angle</h1>
+  
+  </footer>
+  
+  #anglex{display:none}
+#angley{display:none}
+
+#off-angle{display:none}
+#on-angle{display:none}
+
+.tablink4 {
+	font-family: courier;
+    background-color: #555;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 80%;
+}
+
+.tablink3 {
+	font-family: courier;
+    background-color: #555;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+	
+	.tablink2 {
+	font-family: courier;
+    background-color: #555;
+    text: white;
+	text-decoration:none
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 100%;
+}
