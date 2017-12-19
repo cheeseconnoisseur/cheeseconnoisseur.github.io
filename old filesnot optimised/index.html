@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+
+<!-- -->
+<!--code to link to .js and .css files -->
+	<head>
+	<link rel="stylesheet" href="main.css">
+	<script src="code.js"></script>
+	</head>
+	
+	
+	<!-- the content showed at the top for when the elctronics tab is selected-->
+	<div id="electronics" class="tabcontent">
+  <h3>Electroics Stuff</h3>
+  <p>Arduinos , hexapods and joes</p>
+</div>
+<!-- the content showed at the top for when the code tab is selected-->
+<div id="code" class="tabcontent">
+  <h3>Code Projects</h3>
+  <p>Programs i make in vb and python that do cool stufff uno</p> 
+</div>
+<!-- the content showed at the top for when the welcome tab is selected-->
+<div id="welcome" class="tabcontent">
+  <h3>Welcome</h3>
+</div>
+<!-- the content showed at the top for when the android tab is selected-->
+<div id="android" class="tabcontent">
+  <h3>Apps</h3>
+  <p>My andrid projects like thing2thing or mda</p>
+</div>
+<!-- the content showed at the top for when the other tab is selected-->
+<div id="other" class="tabcontent">
+  <h3>Other</h3>
+  <p>Other stuff</p>
+</div>
+
+<div class="buttonrow">
+<!--the five buttons that go under the content each button uses the opencolour function which uses the
+content above to make the navigation thing idk and each button also makes the other divs styles : none
+so only the right stuff is shown uno -->
+<button class="tablink button" onclick="openColour('electronics', this, '#FF5722');electronicsshow();codehide();androidhide();otherhide();introhide()" ><span>Electronics</span></button>
+<button class="tablink button" onclick="openColour('code', this, '#B2FF59');codeshow();androidhide();electronicshide();otherhide();introhide()"><span>Code</span></button>
+<button class="tablink button" onclick="openColour('welcome', this, '#673AB7');electronicshide();codehide();androidhide();otherhide();introshow()" id="defaultOpen" ><span>Welcome</span></button>
+<button class="tablink button" onclick="openColour('android', this, '#42A5F5');androidshow();codehide();electronicshide();otherhide();introhide()"><span>Android</span></button>
+<button class="tablink button" onclick="openColour('other', this, '#FFA726');othershow();androidhide();codehide();electronicshide();introhide()"><span>Other/Downloads</span></button>
+</div>
+	<body>
+	<!-- link to js file? idk why i added it twice-->
+	<script src="code.js"></script>
+			
+			<!--this is the body content for when Android is selected -->
+			<div id="bigman">
+			<table>
+  <tbody><tr>
+    <td>
+      <a href="https://github.com/cheeseconnoisseur/MDP-MyDankApp">
+      <img class="project_img" src="imgs/and.jpg">
+      </a>
+	  <h2> my dank app
+	  <h3>an open source copypasta app with a meme studio
+    </td>
+    
+    <td>
+      <a href="https://github.com/cheeseconnoisseur/Thing2Ting">
+      <img class="project_img" src="imgs/and.jpg">
+      </a>
+	  <h2> translator
+	  <h3>An open source app that translates British English into "Heavy Slang", includes the options to copy to clipboard,share and an in-app word definer that uses "urbandictionary.com
+    </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  
+  <!-- content for when code is selected-->
+  <div id="codeman">
+			<table>
+  <tbody><tr>
+    <td>
+      <a href="https://github.com/cheeseconnoisseur/changecalc">
+      <img class="project_img" src="imgs/cashier.jpg">
+      </a>
+	  <h2> change calculator
+	  <h3>a console £ change calculator with customizable settings
+    </td>
+    
+    <td>
+      <a href="https://github.com/cheeseconnoisseur/virtualpetvb">
+      <img class="project_img" src="imgs/fish.jpg">
+      </a>
+	  <h2> a virtual pet fish
+	  <h3>a virtual fish pet coded in vb
+    </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  <!--content for when electroics is selected -->
+    <div id="electronicsman">
+			<table>
+  <tbody><tr>
+    <td>
+      <a href="http://joeiddon.me/club/">
+      <img class="project_img" src="http://joeiddon.me/images/finnishedTop.jpg">
+      </a>
+	  <h2> (arduino club)snakegame using arduino
+	  <h3>classic snake game
+    </td>
+    
+    <td>
+      <a href="/code/petfish">
+      <img class="project_img" src="imgs/blink.gif">
+      </a>
+	  <h2> hexapod
+	  <h3>...in progress..
+    </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  <!--content for when other is selected -->
+   <div id="otherman">
+			<table>
+  <tbody><tr>
+    <td>
+      <a href="http://joeiddon.me">
+      <img id="joescolour" class="project_img" src="https://raw.githubusercontent.com/RoadKillCat/roadkillcat.github.io/master/images/logo_white.png">
+      </a>
+	  <h2> god himself
+	  <h3>sd cards here
+    </td>
+	
+	<td>
+      <a href="downloads.html">
+      <img class="project_img" src="imgs/arrow.png">
+      </a>
+	  <h2> downloadsss
+	  <h3>no sd cards here
+    </td>
+  
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  
+  <!--content for when intro is selected -->
+  <div id="introman" >
+ <!-- the buttons too turn the firworks on or off /turn the x/y on or off/ the x/y
+ will ony be there if the fireworks are on.// the fireworl button also makes the angle button visible.-->
+  <canvas id="canvas"></canvas>
+  <button id="on-button" class="tablink2 button" onclick="fire()"><span><h1>fireworks:on</h1></span> </button>
+  <button id="off-button"class="tablink4 button" onclick="fireoff()"><span><h1>fireworks:off</h1><h6>gracias:github.com/shreyaspandit</h6></span></button>
+  <button id="on-angle" class="tablink3 button" onclick="anglexshow();angleyshow();onanglehide();offangleshow()"><span><h1>fire x/y:on</h1><h6>test</h6></span> </button>
+  <button id="off-angle"class="tablink3 button" onclick="anglexhide();angleyhide();offanglehide();onangleshow()"><span><h1>fire x/y:off</h1><h6>test</h6></span></button>
+
+  <h1>welcome
+  <h2>to this lit site
+  <h3> use the above tabs to navigate where youd like to go
+<h4>(downlods are in other/downlads)
+  <h5> yw
+  <h6> np
+  
+  
+  <footer>
+ 
+  <h1 id = "anglex">angle</h1>
+  <h1 id = "angley">angle</h1>
+  
+  </footer>
+  
+
+  </div>
+  
+  
+		</div><!-- /.container -->
+	</body>
+</html>
