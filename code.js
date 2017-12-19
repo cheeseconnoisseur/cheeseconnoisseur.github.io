@@ -1,5 +1,5 @@
 
-
+//code for the header it sets the content and colour of the top banner
 function openColour(cityName, elmnt, color) {
     // Hide all elements with class="tabcontent" by default */
     var i, tabcontent, tablinks;
@@ -24,7 +24,7 @@ function openColour(cityName, elmnt, color) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
-
+//all the functions below are a hide and show function for the divs under each tab
 
 function androidshow() {
 var docelement = document.getElementById("bigman");
@@ -74,7 +74,7 @@ function introshow() {
 var docelement = document.getElementById("introman");
 docelement.style.display='block';
 }
-
+//all the functions below are a hide and show function for the firework angle buttons
 function onangleshow() {
 var docelement = document.getElementById("on-angle");
 docelement.style.display='block';
@@ -91,6 +91,7 @@ function offanglehide() {
 var docelement = document.getElementById("off-angle");
 docelement.style.display='none';
 }
+//all the functions below are a hide and show function for the firework angle text
 function anglexshow() {
 var docelement = document.getElementById("anglex");
 docelement.style.display='block';
@@ -107,6 +108,9 @@ function angleyhide() {
 var docelement = document.getElementById("angley");
 docelement.style.display='none';
 }
+/*these two here are the ones that are called when the firework button is pressed
+they make the on or off button appear or dissapear and make the canvas show/notshow
+as well as make the angle button visible*/
 function fire() {
 var docelement = document.getElementById("canvas");
 	docelement.style.display='block';
@@ -116,7 +120,7 @@ var docelement = document.getElementById("on-button");
 	docelement.style.display='none';
 	onangleshow()
 }
-
+//opposite of above but if pressed either angle button poof and the drit is gone
 function fireoff() {
 var docelement = document.getElementById("canvas");
 	docelement.style.display='none';
