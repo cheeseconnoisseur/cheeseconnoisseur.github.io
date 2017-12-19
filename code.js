@@ -66,16 +66,44 @@ var docelement = document.getElementById("otherman");
 docelement.style.display='none';
 }
 
+
 function introshow() {
 var docelement = document.getElementById("introman");
 docelement.style.display='block';
 }
 
-function introhide() {
-var docelement = document.getElementById("introman");
+function onangleshow() {
+var docelement = document.getElementById("on-angle");
+docelement.style.display='block';
+}
+function onanglehide() {
+var docelement = document.getElementById("on-angle");
 docelement.style.display='none';
 }
-
+function offangleshow() {
+var docelement = document.getElementById("off-angle");
+docelement.style.display='block';
+}
+function offanglehide() {
+var docelement = document.getElementById("off-angle");
+docelement.style.display='none';
+}
+function anglexshow() {
+var docelement = document.getElementById("anglex");
+docelement.style.display='block';
+}
+function anglexhide() {
+var docelement = document.getElementById("anglex");
+docelement.style.display='none';
+}
+function angleyshow() {
+var docelement = document.getElementById("angley");
+docelement.style.display='block';
+}
+function angleyhide() {
+var docelement = document.getElementById("angley");
+docelement.style.display='none';
+}
 function fire() {
 var docelement = document.getElementById("canvas");
 	docelement.style.display='block';
@@ -83,6 +111,7 @@ var docelement = document.getElementById("off-button");
 	docelement.style.display='block';
 var docelement = document.getElementById("on-button");
 	docelement.style.display='none';
+	onangleshow()
 }
 
 function fireoff() {
@@ -92,6 +121,8 @@ var docelement = document.getElementById("on-button");
 	docelement.style.display='block';
 var docelement = document.getElementById("off-button");
 	docelement.style.display='none';
+	offanglehide()
+	onanglehide()
 }
 
 //code from here down is courtesy of shreyas : https://github.com/shreyaspandit/html5-fireworks
@@ -175,6 +206,7 @@ window.onload = function() {
 
         this.velocity = 10;
         this.angle = Math.floor(Math.random() * (320 - 250 + 1)) + 250;
+		
 
     }
 
@@ -188,6 +220,10 @@ window.onload = function() {
 
             for(var i = 0; i < 100; i++) {
                 new Explosion(tx, ty);
+				var element = document.getElementById("anglex");
+element.innerHTML = (tx);
+var element = document.getElementById("angley");
+element.innerHTML = (ty);
             }
 
             fireworks.push(new Firework());

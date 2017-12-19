@@ -48,14 +48,37 @@ body {
 .tablink2 {
 	font-family: courier;
     background-color: #555;
-    text: white;
-	text-decoration:none
     float: left;
+    border: none;
+    outline: none;
     cursor: pointer;
     padding: 14px 16px;
     font-size: 17px;
     width: 100%;
+}
 
+.tablink4 {
+	font-family: courier;
+    background-color: #555;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 80%;
+}
+
+.tablink3 {
+	font-family: courier;
+    background-color: #555;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
 }
 
 a {
@@ -127,6 +150,11 @@ td {
 	margin: 0 auto;
 	box-shadow: 0 0 80px black;
 }
+#anglex{display:none}
+#angley{display:none}
+
+#off-angle{display:none}
+#on-angle{display:none}
 #off-button {display:none}
 
 #bigman {display: none;}
