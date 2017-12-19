@@ -67,11 +67,11 @@ docelement.style.display='none';
 }
 
 function introhide() {
-var docelement = document.getElementById("intro");
+var docelement = document.getElementById("introman");
 docelement.style.display='none';
 }
 function introshow() {
-var docelement = document.getElementById("intro");
+var docelement = document.getElementById("introman");
 docelement.style.display='block';
 }
 
