@@ -37,7 +37,7 @@
 
 <div class="buttonrow">
 
-<button class="tablink button" onclick="openColour('electronics', this, '#FF5722');electronicsshow();codehide();androidhide();otherhide();introhide()" ><span>Electronics</span></button>
+<button class="tablink button" onclick="openColour('electronics', this, '#FF5722');electronicsshow();codehide();androidhide();otherhide();ihide()" ><span>Electronics</span></button>
 <button class="tablink button" onclick="openColour('code', this, '#B2FF59');codeshow();androidhide();electronicshide();otherhide();introhide()"><span>Code</span></button>
 <button class="tablink button" onclick="openColour('welcome', this, '#673AB7');electronicshide();codehide();androidhide();otherhide();introshow()" id="defaultOpen" ><span>Welcome</span></button>
 <button class="tablink button" onclick="openColour('android', this, '#42A5F5');androidshow();codehide();electronicshide();otherhide();introhide()"><span>Android</span></button>
@@ -141,18 +141,18 @@
   </tbody>
   </table>
   </div>
-  
-  <div id="introman">
+  <div id="intro" style="display: none">
+ <div id="introman">
   <canvas id="canvas"></canvas>
   <button id="on-button" class="tablink2 button" onclick="fire()"><span><h1>fireworks:on</h1></span> </button>
-  <button id="off-button"class="tablink4 button" onclick="fireoff()"><span><h1>fireworks:off</h1></span></button>
+  <button id="off-button"class="tablink2 button" onclick="fireoff()"><span><h1>fireworks:off</h1><h6>gracias:github.com/shreyaspandit</h6></span></button>
   <button id="on-angle" class="tablink3 button" onclick="anglexshow();angleyshow();onanglehide();offangleshow()"><span><h1>fire x/y:on</h1></span> </button>
   <button id="off-angle"class="tablink3 button" onclick="anglexhide();angleyhide();offanglehide();onangleshow()"><span><h1>fire x/y:off</h1></span></button>
 
   <h1>welcome
   <h2>to this lit site
   <h3> use the above tabs to navigate where youd like to go
-  <h4> "(downlaods are in other/downloads)"
+<h4>(downlods are in other/downlads)
   <h5> yw
   <h6> np
   
@@ -166,6 +166,7 @@
 
   </div>
   
+  </div>
   
   
 		</div><!-- /.container -->
