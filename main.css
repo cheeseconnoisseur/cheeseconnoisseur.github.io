@@ -165,6 +165,14 @@ display: inline-block;}
   -webkit-box-shadow: 0 7px 4px -2px #1a1a1a;
           box-shadow: 0px 7px 4px -2px #1a1a1a;}
 
+
+.tabcontent3{
+	font-family: courier;
+    color: white;
+    display: none;
+    padding: 60px;
+    text-align: center;
+
 }
 /*some code i mugged of joe and still havent got working to sort the content
 in each tab into nice lil boxes*/
@@ -218,7 +226,7 @@ here its mostly colour or visibility*/
 
 #electronics {background-color:#FF5722;}
 #code {background-color:#B2FF59;}
-#welcome {background: url(imgs/rf.gif) center;}
+#welcome {background: url(imgs/source.gif) center;}
 #android {background-color:#42A5F5;}
 #other {background-color:#FFA726;}
 #other2 {background-color:#FFA726;}
