@@ -86,13 +86,12 @@ width is 20% to leave room for the firework off button*/
     font-size: 17px;
     width: 20%;
 }
-/* all the a crap is to make links look good it was originally just for the downloads nut i couldnt
-be asked to make a seperate css file for downlaods so all links are like this*/
+/* all the a crap is to make links look good some are for the download links some are for the rest*/
 a {
 	font-family: courier;
     color: white;
 }
-a:link{
+.gh a:link{
 	font-family: courier;
     background-color: #f44336;
     color: white;
@@ -102,6 +101,23 @@ a:link{
 display: inline-block;}
 
 a:hover{
+    background-color: #4CAF50;
+}
+
+.downloadlinks a {
+	font-family: courier;
+    color: white;
+}
+.downloadlinks a:link{
+	font-family: courier;
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+display: inline-block;}
+
+.downloadlinks a:hover{
     background-color: #4CAF50;
 }
 /* adds shadow to the bottom of the div with all the buttons*/
@@ -165,6 +181,16 @@ td {
 
 /*adjusts the image of each thing, also mugged off joe*/
 .project_img {
+
+	max-width: 93%;
+	max-height: 93%;
+	display: block;
+	margin: 0 auto;
+	box-shadow: 0 0 80px black;
+	 -webkit-transition: all 2s ease;
+}
+
+.project_img:hover {
 
 	max-width: 100%;
 	max-height: 100%;
