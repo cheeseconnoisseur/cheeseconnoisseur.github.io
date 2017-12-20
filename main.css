@@ -117,6 +117,10 @@ a:hover{
     text-decoration: none;
 display: inline-block;}
 
+.burgerpetg {
+	z-index = 999;
+}
+
 .downloadlinks a:hover{
     background-color: #4CAF50;
 }
@@ -161,7 +165,7 @@ display: inline-block;}
     text-align: center;
 	 height: 40px;
 	 position:relative;
-    z-index:999;
+    z-index:0;
   -webkit-box-shadow: 0 7px 4px -2px #1a1a1a;
           box-shadow: 0px 7px 4px -2px #1a1a1a;}
 
