@@ -20,7 +20,7 @@ t.style.display="none"}function othershow(){var t=document.getElementById("other
 t.style.display="block"}function otherhide(){var t=document.getElementById("otherman")
 t.style.display="none"}function introhide(){var t=document.getElementById("introman")
 t.style.display="none"}function introshow(){var t=document.getElementById("introman")
-t.style.display="block"}
+t.style.display="block"}function changeb(){var t=document.body.style.backgroundImage = "url(imgs/jlogo.png)";}
 //all the functions below are a hide and show function for the firework angle buttons
 function onangleshow(){var t=document.getElementById("on-angle")
 t.style.display="block"}function onanglehide(){var t=document.getElementById("on-angle")

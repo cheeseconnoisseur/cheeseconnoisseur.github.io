@@ -60,19 +60,6 @@ width is 100%*/
     font-size: 17px;
     width: 100%;
 }
-/* styling for the firework off button, uses the same styling as the others just the
-width is 80% to leave room for the angle button*/
-.tablink4 {
-	font-family: courier;
-    background-color: #555;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 80%;
-}
 /* styling for the firework angle buttons, uses the same styling as the others just the
 width is 20% to leave room for the firework off button*/
 .tablink3 {
@@ -86,6 +73,20 @@ width is 20% to leave room for the firework off button*/
     font-size: 17px;
     width: 20%;
 }
+/* styling for the firework off button, uses the same styling as the others just the
+width is 80% to leave room for the angle button*/
+.tablink4 {
+	font-family: courier;
+    background-color: #555;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 80%;
+}
+
 /* all the a crap is to make links look good some are for the download links some are for the rest*/
 a {
 	font-family: courier;
