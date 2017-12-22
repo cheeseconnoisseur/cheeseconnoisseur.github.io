@@ -104,9 +104,19 @@ function angleyhide() {
   var t = document.getElementById("angley")
   t.style.display = "none"
 }
+/*these two here are the ones that are called when the firework button is pressed
+to make the things semi transparent using the opacity styling*/
 function everyhide() {
-  var t = document.getElementsByClassName("content")
-  t.style.opacity= "0.0"
+  var t = document.getElementById("andwhoami")
+  t.style.opacity= "0.15"
+  var t = document.getElementById("firstwelcome")
+  t.style.opacity= "0.15"
+}
+function everyshow() {
+  var t = document.getElementById("andwhoami")
+  t.style.opacity= "1"
+  var t = document.getElementById("firstwelcome")
+  t.style.opacity= "1"
 }
 /*these two here are the ones that are called when the firework button is pressed
 they make the on or off button appear or dissapear and make the canvas show/notshow
@@ -116,6 +126,12 @@ function fire() {
   t.style.display = "block"
   var t = document.getElementById("off-button")
   t.style.display = "block"
+  var t = document.getElementById("off-button")
+  t.style.color = "white"
+  var t = document.getElementById("off-angle")
+  t.style.color = "white"
+  var t = document.getElementById("on-angle")
+  t.style.color = "white"
   var t = document.getElementById("on-button")
   t.style.display = "none", onangleshow()
 }

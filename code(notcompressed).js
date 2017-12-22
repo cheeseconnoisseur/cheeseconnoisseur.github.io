@@ -134,7 +134,7 @@ var docelement = document.getElementById("off-button");
 
 //code from here down is courtesy of shreyas : https://github.com/shreyaspandit/html5-fireworks
 
-function lol() {
+window.onload = function() {
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
 
