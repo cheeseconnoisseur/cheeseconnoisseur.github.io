@@ -14,6 +14,7 @@
 
   gtag('config', 'UA-111477944-1');
 </script>
+<link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
 	<link rel="stylesheet" href="main.css">
 	<script src="code.js"></script>
 	<script src="jquery.js"></script>
@@ -192,7 +193,7 @@
  <!-- the buttons too turn the firworks on or off /turn the x/y on or off/ the x/y
  will ony be there if the fireworks are on.// the fireworl button also makes the angle button visible.-->
   <canvas id="canvas"></canvas>
-  <button id="on-button" class="tablink2 button" onclick="fire()"><span><h1>fireworks:on</h1></span> </button>
+  <button id="on-button" class="tablink2 button" onclick="fire();lolol();everyhide()"><span><h1>fireworks:on</h1></span> </button>
   <button id="off-button"class="tablink4 button" onclick="fireoff();angleyhide();anglexhide()"><span><h1>fireworks:off</h1><h6>gracias:github.com/shreyaspandit</h6></span></button>
   <button id="on-angle" class="tablink3 button" onclick="anglexshow();angleyshow();onanglehide();offangleshow()"><span><h1>fire x/y:on</h1><h6>test</h6></span> </button>
   <button id="off-angle"class="tablink3 button" onclick="anglexhide();angleyhide();offanglehide();onangleshow()"><span><h1>fire x/y:off</h1><h6>test</h6></span></button>
@@ -209,13 +210,18 @@
 	</div>
 	<div class="andwhoami">
 <div id="whoami" class="contentme content">
-<h1> who am I?
+<p style = "font-family: 'Roboto Slab'
+;font-size: 40px;
+		color: #444;"> who am I? </p>
+	<p>&nbsp;</p>
 	<h3>Idk tbh
 <p>&nbsp;</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+		<p style = "font-family: 'Roboto Slab'
+		;font-size: 22px;
+				color: #444;">lit website to show off projects and stuff no <strike>gingers</strike> ginger beer allowed,also planning to start a blog soon, if you DO find any bugs dont laugh and say "hoho look at this bug ha html king" just kindly point out then laugh gracias mucho esta parte esta en espanol buena suerte entendiendolo hola big man</p>
 </div>
 <div id="whoi" class="contentmei content">
-	<h1>lol
+	<p>&nbsp;</p>
 </div>
 </div>
 
@@ -251,6 +257,14 @@
 			});
 		});
 	</script>
+<script>
+$(document).ready(function(){
+    var div = $("div");
+    $("#off-button").click(function(){
+        div.stop(true);
+    });
+});
+</script>
 	</body>
 
 </html>

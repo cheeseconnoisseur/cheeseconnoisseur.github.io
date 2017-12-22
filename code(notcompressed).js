@@ -134,7 +134,7 @@ var docelement = document.getElementById("off-button");
 
 //code from here down is courtesy of shreyas : https://github.com/shreyaspandit/html5-fireworks
 
-window.onload = function() {
+function lol() {
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
 
@@ -213,7 +213,7 @@ window.onload = function() {
 
         this.velocity = 10;
         this.angle = Math.floor(Math.random() * (320 - 250 + 1)) + 250;
-		
+
 
     }
 
