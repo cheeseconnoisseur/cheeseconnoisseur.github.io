@@ -1,7 +1,59 @@
 body {
 	font-family: courier;
-
+background-color: #f6f6f6;
 	color : grey;
+}
+
+.isStuck{
+    left:0px;
+    width:100%;
+}
+/*the content for the main page */
+.content {
+	position: center;
+	font-family: Arial;
+	background-color: #f6f6f6;
+	color: #848484;
+	font-size: 17px;
+	text-align: center;
+	 -webkit-transition: all 2s ease;
+}
+.andwhoami{
+	display: flex;
+}
+.contentwel {
+	width:95%
+	margin-left: auto;
+	margin-right: auto;
+}
+.contentmei {
+
+	background: url(imgs/meme.gif) center;
+	background-size: cover;
+background-repeat: no-repeat;
+	width:40%;
+float:left;
+background-color: #f6f556;
+}
+.contentme {
+
+width:60%;
+float:left;
+}
+.contentwel:hover {
+width:100%;
+}
+
+.contentme:hover {
+width:65%;}
+.contentme:hover + .contentmei {
+    width:35%
+}
+.contentmei:hover {
+width:45%;
+}
+.contentmei:hover + .contentme {
+    width:50%
 }
 /*styling for the five buttons at the top*/
 .tablink {

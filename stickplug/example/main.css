@@ -1,0 +1,376 @@
+body {
+
+
+	color : grey;
+}
+.isStuck{
+    left:0px;
+    width:100%;
+}
+.navbar-wrapper {
+
+  z-index: 15;
+  width:100%
+
+}
+
+.navbar.navbar-inverse.navbar-static-top {
+  background: #5cb85c;
+  border-color: #398439;
+  width:100%
+}
+.navbar.navbar-inverse.navbar-static-top a{
+  color:#fff;
+    width:100%
+}
+.navbar.navbar-inverse.navbar-static-top a:hover{
+  color:#0A64A4;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus{
+  background:#398439;
+  font-weight:700;
+    width:100%
+}
+.navbar-inverse .navbar-nav>.active>a:hover {
+  background:#398439;
+  color:#fff;
+  font-weight:700;
+    width:100%
+}
+/*the content for the main page */
+.contenttt {
+	font-family: Helvetica;
+	background-color: #559;
+	color: red;
+	float: left;
+	padding: 14px 16px;
+	font-size: 17px;
+	width: 100%;
+}
+/*styling for the five buttons at the top*/
+.tablink {
+	font-family: courier;
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+}
+/*all the .button crap is for the animation meaning i had to add two classes to most of the buttons */
+.button {
+  text-align: center;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* styling for the firework on button, uses the same styling as the others just the
+width is 100%*/
+.tablink2 {
+	font-family: courier;
+    background-color: #555;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 100%;
+}
+/* styling for the firework angle buttons, uses the same styling as the others just the
+width is 20% to leave room for the firework off button*/
+.tablink3 {
+	font-family: courier;
+    background-color: #555;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+}
+/* styling for the firework off button, uses the same styling as the others just the
+width is 80% to leave room for the angle button*/
+.tablink4 {
+	font-family: courier;
+    background-color: #555;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 80%;
+}
+.fue {
+  margin-top:20px;
+  position: relative;
+  z-index: 15;
+}
+.well {
+  margin-top:20px;
+  position: relative;
+  z-index: 15;
+}
+.isStuck{
+    left:0px;
+    width:100%;
+}
+/* all the a crap is to make links look good some are for the download links some are for the rest*/
+a {
+	font-family: courier;
+    color: white;
+}
+.gh a:link{
+	font-family: courier;
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+display: inline-block;}
+
+a:hover{
+    background-color: #4CAF50;
+}
+
+.downloadlinks a {
+	font-family: courier;
+    color: white;
+}
+.downloadlinks a:link{
+	font-family: courier;
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+display: inline-block;}
+
+.burgerpetg {
+	z-index = 999;
+}
+
+.downloadlinks a:hover{
+    background-color: #4CAF50;
+}
+/* adds shadow to the bottom of the div with all the buttons*/
+.buttonrow {
+
+  width: 100%;
+  height: 40px;
+  -webkit-box-shadow: 0 15px 5px -2px #888;
+          box-shadow: 0px 15px 5px -2px #888;}
+/*change the colur when you hover on the buttons*/
+.tablink:hover {
+	font-family: courier;
+    background-color: #777;
+}
+.tablink4:hover {
+	font-family: courier;
+    background-color: #777;
+}
+.tablink3:hover {
+	font-family: courier;
+    background-color: #777;
+}
+.tablink2:hover {
+	font-family: courier;
+    background-color: #777;
+}
+/*styling for the top banner with the info when a tab is selected*/
+.tabcontent{
+	font-family: courier;
+    color: white;
+    display: none;
+    padding: 40px;
+    text-align: center;
+}
+/*styling for the banner in the downloads page,has shadow*/
+.tabcontent2{
+	font-family: courier;
+    color: white;
+    display: block;
+    padding: 40px;
+    text-align: center;
+	 height: 40px;
+	 position:relative;
+    z-index:0;
+  -webkit-box-shadow: 0 7px 4px -2px #1a1a1a;
+          box-shadow: 0px 7px 4px -2px #1a1a1a;}
+
+
+.tabcontent3{
+	font-family: courier;
+    color: white;
+    display: none;
+    padding: 60px;
+    text-align: center;
+
+}
+/*some code i mugged of joe and still havent got working to sort the content
+in each tab into nice lil boxes*/
+tr{
+	width:100%
+}
+
+td {
+	padding: 30px;
+	width: 50%;
+	height: 50%;
+   margin: 0 auto;
+}
+
+/*adjusts the image of each thing, also mugged off joe*/
+.project_img {
+
+	max-width: 93%;
+	max-height: 93%;
+	display: block;
+	margin: 0 auto;
+	box-shadow: 0 0 80px black;
+	 -webkit-transition: all 2s ease;
+}
+
+.project_img:hover {
+
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	margin: 0 auto;
+	box-shadow: 0 0 80px black;
+}
+/*all of the ones below use the id to style whatever has the id,
+here its mostly colour or visibility*/
+#anglex{display:none}
+#angley{display:none}
+
+#off-angle{display:none}
+#on-angle{display:none}
+#off-button {display:none}
+
+
+#bigman {display: none;}
+#codeman {display: none;}
+#electronicsman {display:none}
+#otherman {display:none}
+#joescolour {background-color:#00979F}
+
+#welcome {text-align: center;}
+
+#electronics {background-color:#FF5722;}
+#code {background-color:#B2FF59;}
+#welcome {background: url(imgs/source.gif) center;}
+#android {background-color:#42A5F5;}
+#other {background-color:#FFA726;}
+#other2 {background-color:#FFA726;}
+
+/*code fom here on downwards courtesy of shreyas: https://github.com/shreyaspandit/html5-fireworks*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    display: none;
+	position:fixed;
+	z-index:-1
+}
+
+
+
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+
+#features {
+  max-width:none;
+}
+
+.row.featurette {
+  padding: 0 80px;
+  margin-right:0px;
+  margin-left:0px;
+}
+
+.row.featurette:nth-child(even){
+  background:#e6f1fa;
+  padding-bottom:50px;
+}
+
+.isStuck{
+    left:0px;
+    width:100%;
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+
+  z-index: 15;
+  width:100%
+
+}
+
+.navbar.navbar-inverse.navbar-static-top {
+  background: #5cb85c;
+  border-color: #398439;
+  width:100%
+}
+.navbar.navbar-inverse.navbar-static-top a{
+  color:#fff;
+    width:100%
+}
+.navbar.navbar-inverse.navbar-static-top a:hover{
+  color:#0A64A4;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus{
+  background:#398439;
+  font-weight:700;
+    width:100%
+}
+.navbar-inverse .navbar-nav>.active>a:hover {
+  background:#398439;
+  color:#fff;
+  font-weight:700;
+    width:100%
+}
+
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}

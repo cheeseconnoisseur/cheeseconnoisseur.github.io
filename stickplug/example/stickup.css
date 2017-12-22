@@ -1,0 +1,39 @@
+
+.isStuck{
+    left:0px;
+    width:100%;
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+
+  z-index: 15;
+  width:100%
+
+}
+
+.navbar.navbar-inverse.navbar-static-top {
+  background: #5cb85c;
+  border-color: #398439;
+  width:100%
+}
+.navbar.navbar-inverse.navbar-static-top a{
+  color:#fff;
+    width:100%
+}
+.navbar.navbar-inverse.navbar-static-top a:hover{
+  color:#0A64A4;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus{
+  background:#398439;
+  font-weight:700;
+    width:100%
+}
+.navbar-inverse .navbar-nav>.active>a:hover {
+  background:#398439;
+  color:#fff;
+  font-weight:700;
+    width:100%
+}
