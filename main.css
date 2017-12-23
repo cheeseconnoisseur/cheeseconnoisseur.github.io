@@ -1,6 +1,5 @@
 body {
 	font-family: courier;
-background-color: #f6f6f6;
 	color : grey;
 }
 
@@ -8,66 +7,122 @@ background-color: #f6f6f6;
     left:0px;
     width:100%;
 }
-/*the content for the main page */
-.content {
-	position: center;
-	font-family: Arial;
-	background-color: #f6f6f6;
-	color: #848484;
-	font-size: 17px;
-	text-align: center;
-	 -webkit-transition: all 1s ease;
-}
-.andwhoami{
-	display: flex;
-}
-.contentwel {
-	width:95%
-	margin-left: auto;
-	margin-right: auto;
-}
-.contentmei {
 
-	background: url(imgs/meme.gif) center;
-	background-size: cover;
-background-repeat: no-repeat;
-	width:40%;
-float:left;
-background-color: #f6f556;
-}
-.contentme {
+/*main shit here*/
 
-width:60%;
-float:left;
-}
-.contentwel:hover {
-width:100%;
-}
-
-.contentme:hover {
-width:65%;}
-.contentme:hover + .contentmei {
-    width:35%
-}
-.contentmei:hover {
-width:45%;
-}
-.contentmei:hover + .contentme {
-    width:50%
-}
 /*styling for the five buttons at the top*/
 .tablink {
 	font-family: courier;
     background-color: #555;
-    color: white;
     float: left;
     border: none;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
     font-size: 17px;
-    width: 20%;
 }
+/*styling for the top banner with the info when a tab is selected*/
+.tabcontent{
+	font-family: courier;
+    color: white;
+    display: none;
+    padding: 40px;
+    text-align: center;
+}
+
+.col2 {
+	background-size: cover;
+
+	width:40%;
+float:left;
+
+}
+.col1 {
+	padding-top: 20px;
+	padding-bottom: 30px;
+width:60%;
+float:left;
+background-color: #f6f6f6;
+}
+
+.grid{
+	display: flex;
+background-color: #f6f6f6;
+align-items: stretch;
+}
+
+/*hover shit here*/
+.introduction:hover {
+width:100%;
+}
+
+.col1:hover {
+width:65%;}
+.col1:hover + .col2 {
+    width:35%
+}
+.col2:hover {
+width:45%;
+}
+.col2:hover + .contentme {
+    width:50%
+}
+
+.project_img:hover {
+
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	margin: 0 auto;
+	box-shadow: 0 0 80px black;
+}
+/*change the colur when you hover on the buttons*/
+.tablink:hover {
+	font-family: courier;
+    background-color: #777;
+}
+.firebutton:hover {
+	font-family: courier;
+    background-color: #777;
+}
+.fireoffbutton:hover {
+	font-family: courier;
+    background-color: #777;
+}
+.fireanglebutton:hover {
+	font-family: courier;
+    background-color: #777;
+}
+
+/*the content for the main page */
+.content {
+	position: center;
+	font-family: Arial;
+
+	font-size: 17px;
+	text-align: center;
+	 -webkit-transition: all 1s ease;
+}
+.case{}
+
+.introduction {
+	width:95%
+	margin-left: auto;
+	margin-right: auto;
+}
+.p2{
+		background: url(imgs/meme.gif) center;
+	background-color: #f6f6f6;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+.p3{
+		background: url(imgs/trump.gif) center;
+	background-color: #f6f6f6;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
 /*all the .button crap is for the animation meaning i had to add two classes to most of the buttons */
 .button {
   text-align: center;
@@ -99,43 +154,24 @@ width:45%;
   opacity: 1;
   right: 0;
 }
+
+.navtab{
+	color: white;
+	width: 20%
+}
 /* styling for the firework on button, uses the same styling as the others just the
 width is 100%*/
-.tablink2 {
-	font-family: courier;
-    background-color: #555;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
+.firebutton{
     width: 100%;
 }
 /* styling for the firework angle buttons, uses the same styling as the others just the
 width is 20% to leave room for the firework off button*/
-.tablink3 {
-	font-family: courier;
-    background-color: #555;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
+.fireanglebutton {
     width: 20%;
 }
 /* styling for the firework off button, uses the same styling as the others just the
 width is 80% to leave room for the angle button*/
-.tablink4 {
-	font-family: courier;
-    background-color: #555;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
+.fireoffbutton {
     width: 80%;
 }
 
@@ -143,6 +179,7 @@ width is 80% to leave room for the angle button*/
 a {
 	font-family: courier;
     color: white;
+		text-decoration: none;
 }
 .gh a:link{
 	font-family: courier;
@@ -150,7 +187,6 @@ a {
     color: white;
     padding: 14px 25px;
     text-align: center;
-    text-decoration: none;
 display: inline-block;}
 
 a:hover{
@@ -170,10 +206,6 @@ a:hover{
     text-decoration: none;
 display: inline-block;}
 
-.burgerpetg {
-	z-index = 999;
-}
-
 .downloadlinks a:hover{
     background-color: #4CAF50;
 }
@@ -184,31 +216,8 @@ display: inline-block;}
   height: 40px;
   -webkit-box-shadow: 0 15px 5px -2px #888;
           box-shadow: 0px 15px 5px -2px #888;}
-/*change the colur when you hover on the buttons*/
-.tablink:hover {
-	font-family: courier;
-    background-color: #777;
-}
-.tablink4:hover {
-	font-family: courier;
-    background-color: #777;
-}
-.tablink3:hover {
-	font-family: courier;
-    background-color: #777;
-}
-.tablink2:hover {
-	font-family: courier;
-    background-color: #777;
-}
-/*styling for the top banner with the info when a tab is selected*/
-.tabcontent{
-	font-family: courier;
-    color: white;
-    display: none;
-    padding: 40px;
-    text-align: center;
-}
+
+
 /*styling for the banner in the downloads page,has shadow*/
 .tabcontent2{
 	font-family: courier;
@@ -231,6 +240,7 @@ display: inline-block;}
     text-align: center;
 
 }
+
 /*some code i mugged of joe and still havent got working to sort the content
 in each tab into nice lil boxes*/
 tr{
@@ -255,14 +265,7 @@ td {
 	 -webkit-transition: all 2s ease;
 }
 
-.project_img:hover {
 
-	max-width: 100%;
-	max-height: 100%;
-	display: block;
-	margin: 0 auto;
-	box-shadow: 0 0 80px black;
-}
 /*all of the ones below use the id to style whatever has the id,
 here its mostly colour or visibility*/
 #anglex{display:none}

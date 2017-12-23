@@ -1,109 +1,44 @@
 //code for the header it sets the content and colour of the top banner
-function openColour(t, e, n) {
+function openColour(t, e, n, el) {
   // Hide all elements with class="tabcontent" by default */
   var i, o, a
   for (o = document.getElementsByClassName("tabcontent"), i = 0; i < o.length; i++) o[i].style.display = "none"
   for (a = document.getElementsByClassName("tablink"), i = 0; i < a.length; i++) a[i].style.backgroundColor = ""
 
   ; // Show the specific tab content
-  document.getElementById(t).style.display = "block",
+  document.getElementById(t).style.display = "block";
+  document.getElementById(el).style.display = "block";
+  var con = ["electronicsman", "codeman", "bigman","introman","otherman"];
+con.splice( con.indexOf(el), 1 );
+con.forEach( function(s) {
+      document.getElementById(s).style.display = "none";
+  } );
+  con.splice( con.indexOf(el), 1 );
+var arrayLength = con.length;
+ for (var i = 0; i < arrayLength; i++) {
+  //  alert(myStringArray[i]);
+    //hide(i)
+    document.getElementById(i).style.display = "none";
+}
+
+
+
     // Add the specific color to the button used to open the tab content
     e.style.backgroundColor = n
 }
+
+function show(element){
+  document.getElementById(element).style.display = "block"
+}
+function hide(element){
+  document.getElementById(element).style.display = "none"
+}
 //all the functions below are a hide and show function for the divs under each tab
-function androidshow() {
-  var t = document.getElementById("bigman")
-  t.style.display = "block"
-}
-
-function androidhide() {
-  var t = document.getElementById("bigman")
-  t.style.display = "none"
-}
-
-function codeshow() {
-  var t = document.getElementById("codeman")
-  t.style.display = "block"
-}
-
-function codehide() {
-  var t = document.getElementById("codeman")
-  t.style.display = "none"
-}
-
-function electronicsshow() {
-  var t = document.getElementById("electronicsman")
-  t.style.display = "block"
-}
-
-function electronicshide() {
-  var t = document.getElementById("electronicsman")
-  t.style.display = "none"
-}
-
-function othershow() {
-  var t = document.getElementById("otherman")
-  t.style.display = "block"
-}
-
-function otherhide() {
-  var t = document.getElementById("otherman")
-  t.style.display = "none"
-}
-
-function introhide() {
-  var t = document.getElementById("introman")
-  t.style.display = "none"
-}
-
-function introshow() {
-  var t = document.getElementById("introman")
-  t.style.display = "block"
-}
 
 function changeb() {
   var t = document.body.style.backgroundImage = "url(imgs/jlogo.png)";
 }
-//all the functions below are a hide and show function for the firework angle buttons
-function onangleshow() {
-  var t = document.getElementById("on-angle")
-  t.style.display = "block"
-}
 
-function onanglehide() {
-  var t = document.getElementById("on-angle")
-  t.style.display = "none"
-}
-
-function offangleshow() {
-  var t = document.getElementById("off-angle")
-  t.style.display = "block"
-}
-
-function offanglehide() {
-  var t = document.getElementById("off-angle")
-  t.style.display = "none"
-}
-//all the functions below are a hide and show function for the firework angle text
-function anglexshow() {
-  var t = document.getElementById("anglex")
-  t.style.display = "block"
-}
-
-function anglexhide() {
-  var t = document.getElementById("anglex")
-  t.style.display = "none"
-}
-
-function angleyshow() {
-  var t = document.getElementById("angley")
-  t.style.display = "block"
-}
-
-function angleyhide() {
-  var t = document.getElementById("angley")
-  t.style.display = "none"
-}
 /*these two here are the ones that are called when the firework button is pressed
 to make the things semi transparent using the opacity styling*/
 function everyhide() {
@@ -122,27 +57,20 @@ function everyshow() {
 they make the on or off button appear or dissapear and make the canvas show/notshow
 as well as make the angle button visible*/
 function fire() {
-  var t = document.getElementById("canvas")
-  t.style.display = "block"
-  var t = document.getElementById("off-button")
-  t.style.display = "block"
-  var t = document.getElementById("off-button")
-  t.style.color = "white"
-  var t = document.getElementById("off-angle")
-  t.style.color = "white"
-  var t = document.getElementById("on-angle")
-  t.style.color = "white"
-  var t = document.getElementById("on-button")
-  t.style.display = "none", onangleshow()
+  show('canvas')
+  show('off-button')
+  show('on-angle')
+  hide('on-button')
 }
 //opposite of above but if pressed either angle button poof and the drit is gone
 function fireoff() {
-  var t = document.getElementById("canvas")
-  t.style.display = "none"
-  var t = document.getElementById("on-button")
-  t.style.display = "block"
-  var t = document.getElementById("off-button")
-  t.style.display = "none", offanglehide(), onanglehide()
+  hide('canvas')
+  show('on-button')
+  hide('off-button')
+  hide('anglex')
+  hide('angley')
+  hide('on-angle')
+  hide('off-angle')
 }
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click(),
@@ -162,10 +90,16 @@ document.getElementById("defaultOpen").click(),
     }
     //Fireworks {{
     function n() {
+  //var t = document.getElementById("off-button")
+    //  if(element.currentStyle ? element.currentStyle.display :
+                    //          getComputedStyle(element, null)==='none')
+      //   return;
+    //     else {
       this.explosions = [], this.x = s / 2, this.y = d, this.radius = 4, this.color = "#" + Math.floor(16777215 * Math.random()).toString(16),
         //Random number: Math.floor(Math.random() * (max - min + 1)) + min;
         this.life = Math.floor(Math.random() * (3 * d / 4 - d / 2 + 1)) + d / 2, this.velocity = 10, this.angle = Math.floor(71 * Math.random()) + 250
     }
+
 
     function i(t, e) {
       this.x = t, this.y = e, this.w = 10, this.h = 10, this.hue = Math.round(360 * Math.random()), this.alpha = 1, this.fade = 0, this.shrink = .93, this.radius = 10, this.speed = 15 * Math.cos(Math.random() * Math.PI / 2), this.angle = Math.random() * Math.PI * 2, this.resistance = .95, this.vx = this.speed * Math.cos(this.angle), this.vy = this.speed * Math.sin(this.angle), this.gravity = .2

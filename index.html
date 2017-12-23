@@ -82,11 +82,11 @@
 						<!--the five buttons that go under the content each button uses the opencolour function which uses the
 						content above to make the navigation thing idk and each button also makes the other divs styles : none
 						so only the right stuff is shown uno -->
-						<button class="tablink button" onclick="openColour('electronics', this, '#FF5722');electronicsshow();codehide();androidhide();otherhide();introhide()" ><span>Electronics</span></button>
-						<button class="tablink button" onclick="openColour('code', this, '#B2FF59');codeshow();androidhide();electronicshide();otherhide();introhide()"><span>Code</span></button>
-						<button class="tablink button" onclick="openColour('welcome', this, '#673AB7');electronicshide();codehide();androidhide();otherhide();introshow()" id="defaultOpen" ><span>Welcome</span></button>
-						<button class="tablink button" onclick="openColour('android', this, '#42A5F5');androidshow();codehide();electronicshide();otherhide();introhide()"><span>Android</span></button>
-						<button class="tablink button" onclick="openColour('other', this, '#FFA726');othershow();androidhide();codehide();electronicshide();introhide()"><span>Other/Downloads</span></button>
+						<button class="navtab tablink button" onclick="openColour('electronics', this, '#FF5722', 'electronicsman')" ><span>Electronics</span></button>
+						<button class="navtab tablink button" onclick="openColour('code', this, '#B2FF59', 'codeman')"><span>Code</span></button>
+						<button class="navtab tablink button" onclick="openColour('welcome', this, '#673AB7','introman')" id="defaultOpen" ><span>Welcome</span></button>
+						<button class="navtab tablink button" onclick="openColour('android', this, '#42A5F5','bigman')"><span>Android</span></button>
+						<button class="navtab tablink button" onclick="openColour('other', this, '#FFA726','otherman')"><span>Other/Downloads</span></button>
 						</div>
 
 	</div>
@@ -94,6 +94,75 @@
 	<body>
 	<!-- link to js file? idk why i added it twice-->
 	<script src="code.js"></script>
+
+
+	<!--content for when intro is selected -->
+  <div id="introman" >
+ <!-- the buttons too turn the firworks on or off /turn the x/y on or off/ the x/y
+ will ony be there if the fireworks are on.// the fireworl button also makes the angle button visible.-->
+  <canvas id="canvas"></canvas>
+	<div class="allcontent">
+		<div id= "fireworkbuttons" class="contentwel content">
+	<div class="buttonplacement">
+  <button id="on-button" class="tablink firebutton button" onclick="fire();lolol()"><span><h1>fireworks:on</h1></span> </button>
+  <button id="off-button"class="tablink fireoffbutton button" onclick="fireoff();angleyhide();anglexhide()"><span><h1>fireworks:off</h1><h6>gracias:github.com/shreyaspandit</h6></span></button>
+  <button id="on-angle" class="tablink fireanglebutton button" onclick="show('anglex');show('angley');hide('on-angle');show('off-angle')"><span><h1>fire x/y:on</h1><h6>test</h6></span> </button>
+  <button id="off-angle"class="tablink fireanglebutton button" onclick="hide('anglex');hide('angley');hide('off-angle');show('on-angle')"><span><h1>fire x/y:off</h1><h6>test</h6></span></button>
+</div>
+</div>
+<div id="introduction" class="introduction content">
+  <h1>welcome
+  <h2>to this lit site
+  <h3> use the above tabs to navigate where youd like to go
+<h4>(downlods are in other/downlads)
+  <h5> yw
+  <h6> np
+	</div>
+<div class = "case">
+	<div id="twogrid"class="grid">
+<div id="col1" class="col1 p1 content">
+<p style = "font-family: 'Roboto Slab'
+;font-size: 40px;
+		color: #444;"> who am I? </p>
+	<p>&nbsp;</p>
+	<h3>Idk tbh
+<p>&nbsp;</p>
+		<p style = "font-family: 'Roboto Slab'
+		;font-size: 25px;
+				color: #444;">lit website to show off projects and stuff no <strike>gingers</strike> ginger beer allowed,also planning to start a blog soon, if you DO find any bugs dont laugh and say "hoho look at this bug ha html king" just kindly point out then laugh gracias mucho esta parte esta en espanol buena suerte entendiendolo hola big man i gotta make this a tiny bit longer to show the animation because they use a flex box to make them equal hieghts yeah there you go learn somin new everyday ooof</p>
+					<p>&nbsp;</p>
+						<p>&nbsp;</p>
+</div>
+<div id="col2" class="col2 p2 content">
+	<p>&nbsp;</p>
+</div>
+</div>
+</div>
+<div class = "case">
+	<div id="twogrid"class="grid">
+		<div id="col2" class="col2 p3 content">
+			<p>&nbsp;</p>
+		</div>
+<div id="col1" class="col1 p4 content">
+<p style = "font-family: 'Roboto Slab'
+;font-size: 40px;
+		color: #444;"> who am I? </p>
+	<p>&nbsp;</p>
+	<h3>Idk tbh
+<p>&nbsp;</p>
+		<p style = "font-family: 'Roboto Slab'
+		;font-size: 25px;
+				color: #444;">lit website to show off projects and stuff no <strike>gingers</strike> ginger beer allowed,also planning to start a blog soon, if you DO find any bugs dont laugh and say "hoho look at this bug ha html king" just kindly point out then laugh gracias mucho esta parte esta en espanol buena suerte entendiendolo hola big man i gotta make this a tiny bit longer to show the animation because they use a flex box to make them equal hieghts yeah there you go learn somin new everyday ooof</p>
+					<p>&nbsp;</p>
+						<p>&nbsp;</p>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+
 
 			<!--this is the body content for when Android is selected -->
 			<div id="bigman">
@@ -188,50 +257,7 @@
   </table>
   </div>
 
-  <!--content for when intro is selected -->
-  <div id="introman" >
- <!-- the buttons too turn the firworks on or off /turn the x/y on or off/ the x/y
- will ony be there if the fireworks are on.// the fireworl button also makes the angle button visible.-->
-  <canvas id="canvas"></canvas>
-	<div class="allcontent">
-		<div id= "firstwelcome" class="contentwel content">
-	<div class="buttonplacement">
-  <button id="on-button" class="tablink2 button" onclick="fire();lolol();everyhide()"><span><h1>fireworks:on</h1></span> </button>
-  <button id="off-button"class="tablink4 button" onclick="fireoff();angleyhide();anglexhide();everyshow()"><span><h1>fireworks:off</h1><h6>gracias:github.com/shreyaspandit</h6></span></button>
-  <button id="on-angle" class="tablink3 button" onclick="anglexshow();angleyshow();onanglehide();offangleshow()"><span><h1>fire x/y:on</h1><h6>test</h6></span> </button>
-  <button id="off-angle"class="tablink3 button" onclick="anglexhide();angleyhide();offanglehide();onangleshow()"><span><h1>fire x/y:off</h1><h6>test</h6></span></button>
-</div>
-  <h1>welcome
-  <h2>to this lit site
-  <h3> use the above tabs to navigate where youd like to go
-<h4>(downlods are in other/downlads)
-  <h5> yw
-  <h6> np
-	</div>
-	<div id="andwhoami"class="andwhoami">
-<div id="whoami" class="contentme content">
-<p style = "font-family: 'Roboto Slab'
-;font-size: 40px;
-		color: #444;"> who am I? </p>
-	<p>&nbsp;</p>
-	<h3>Idk tbh
-<p>&nbsp;</p>
-		<p style = "font-family: 'Roboto Slab'
-		;font-size: 25px;
-				color: #444;">lit website to show off projects and stuff no <strike>gingers</strike> ginger beer allowed,also planning to start a blog soon, if you DO find any bugs dont laugh and say "hoho look at this bug ha html king" just kindly point out then laugh gracias mucho esta parte esta en espanol buena suerte entendiendolo hola big man i gotta make this a tiny bit longer to show the animation because they use a flex box to make them equal hieghts yeah there you go learn somin new everyday ooof</p>
-					<p>&nbsp;</p>
-						<p>&nbsp;</p>
 
-</div>
-<div id="whoi" class="contentmei content">
-	<p>&nbsp;</p>
-</div>
-</div>
-
-
-
-</div>
-</div>
 
   <footer>
 
