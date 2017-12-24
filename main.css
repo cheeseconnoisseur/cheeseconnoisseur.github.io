@@ -103,12 +103,17 @@ width:45%;
 	text-align: center;
 	 -webkit-transition: all 1s ease;
 }
-.case{}
+
 
 .introduction {
-	width:95%
-	margin-left: auto;
-	margin-right: auto;
+	height: auto;
+	width:95%;
+	position: centre
+	text-align: center;
+float:none;
+	background-color: #ffffff;
+
+
 }
 .p2{
 		background: url(imgs/meme.gif) center;
@@ -121,6 +126,10 @@ width:45%;
 	background-color: #f6f6f6;
 	background-repeat: no-repeat;
 	background-size: cover
+}
+
+.case{
+	float:inherit;
 }
 
 /*all the .button crap is for the animation meaning i had to add two classes to most of the buttons */
@@ -214,8 +223,7 @@ display: inline-block;}
 
   width: 100%;
   height: 40px;
-  -webkit-box-shadow: 0 15px 5px -2px #888;
-          box-shadow: 0px 15px 5px -2px #888;}
+}
 
 
 /*styling for the banner in the downloads page,has shadow*/
@@ -268,6 +276,7 @@ td {
 
 /*all of the ones below use the id to style whatever has the id,
 here its mostly colour or visibility*/
+
 #anglex{display:none}
 #angley{display:none}
 

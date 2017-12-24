@@ -17,7 +17,7 @@
 <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
 	<link rel="stylesheet" href="main.css">
 	<script src="code.js"></script>
-	<script src="jquery.js"></script>
+	<script src="jquery\jquery-3.2.1.min.js"></script>
   <meta name="HandheldFriendly" content="true" />
 <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
 <meta name="arturodezon.me" content="HTML,CSS,XML,JavaScript">
@@ -91,7 +91,8 @@
 
 	</div>
 		</div><!-- End Navbar -->
-	<body>
+
+	<body id="body">
 	<!-- link to js file? idk why i added it twice-->
 	<script src="code.js"></script>
 
@@ -101,15 +102,20 @@
  <!-- the buttons too turn the firworks on or off /turn the x/y on or off/ the x/y
  will ony be there if the fireworks are on.// the fireworl button also makes the angle button visible.-->
   <canvas id="canvas"></canvas>
-	<div class="allcontent">
+	<div id="allcontent" class="allcontent">
+		<div id="wrappyatthetoppy">
 		<div id= "fireworkbuttons" class="contentwel content">
 	<div class="buttonplacement">
-  <button id="on-button" class="tablink firebutton button" onclick="fire();lolol()"><span><h1>fireworks:on</h1></span> </button>
-  <button id="off-button"class="tablink fireoffbutton button" onclick="fireoff();angleyhide();anglexhide()"><span><h1>fireworks:off</h1><h6>gracias:github.com/shreyaspandit</h6></span></button>
+  <button id="on-button" class="tablink firebutton button" onclick="fire();lolol();opac()"><span><h1>fireworks:on</h1></span> </button>
+  <button id="off-button"class="tablink fireoffbutton button" onclick="fireoff();opacshow()"><span><h1>fireworks:off</h1><h6>gracias:github.com/shreyaspandit</h6></span></button>
   <button id="on-angle" class="tablink fireanglebutton button" onclick="show('anglex');show('angley');hide('on-angle');show('off-angle')"><span><h1>fire x/y:on</h1><h6>test</h6></span> </button>
   <button id="off-angle"class="tablink fireanglebutton button" onclick="hide('anglex');hide('angley');hide('off-angle');show('on-angle')"><span><h1>fire x/y:off</h1><h6>test</h6></span></button>
 </div>
 </div>
+<p>&nbsp;</p>
+<h1 id = "anglex">angle</h1>
+<h1 id = "angley">angle</h1>
+<div id="case" class = "case">
 <div id="introduction" class="introduction content">
   <h1>welcome
   <h2>to this lit site
@@ -118,7 +124,9 @@
   <h5> yw
   <h6> np
 	</div>
-<div class = "case">
+	</div>
+</div>
+<div id="case" class = "case">
 	<div id="twogrid"class="grid">
 <div id="col1" class="col1 p1 content">
 <p style = "font-family: 'Roboto Slab'
@@ -138,21 +146,23 @@
 </div>
 </div>
 </div>
-<div class = "case">
+<div id="case" class = "case">
 	<div id="twogrid"class="grid">
+
 		<div id="col2" class="col2 p3 content">
 			<p>&nbsp;</p>
 		</div>
+
 <div id="col1" class="col1 p4 content">
 <p style = "font-family: 'Roboto Slab'
 ;font-size: 40px;
-		color: #444;"> who am I? </p>
+		color: #444;"> About and Stuff </p>
 	<p>&nbsp;</p>
 	<h3>Idk tbh
 <p>&nbsp;</p>
 		<p style = "font-family: 'Roboto Slab'
 		;font-size: 25px;
-				color: #444;">lit website to show off projects and stuff no <strike>gingers</strike> ginger beer allowed,also planning to start a blog soon, if you DO find any bugs dont laugh and say "hoho look at this bug ha html king" just kindly point out then laugh gracias mucho esta parte esta en espanol buena suerte entendiendolo hola big man i gotta make this a tiny bit longer to show the animation because they use a flex box to make them equal hieghts yeah there you go learn somin new everyday ooof</p>
+				color: #444;">err I made this in like 5 days idk Its in HTML CSS JS and im uring jquery and the stick up js plugin also thanks to shreyas i kinda borrowed his code and adapted it for the fireworks button. ill show off stuff here i might start a blog who knows but im yet to figure out subdomains so yeah btw theres an easter egg on the downlaods page its lit so yeah.check out the code in github ive anotatted everything so its acc understandable and only half of the js is hardcoded.PS i still havent made a function that stops the fireworks so they carry on behind the scenes when yout urn them off so lowkey refresh the page if the school computers cant handle it/</p>
 					<p>&nbsp;</p>
 						<p>&nbsp;</p>
 </div>
@@ -261,8 +271,7 @@
 
   <footer>
 
-  <h1 id = "anglex">angle</h1>
-  <h1 id = "angley">angle</h1>
+
 
   </footer>
 

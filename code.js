@@ -33,6 +33,18 @@ function show(element){
 function hide(element){
   document.getElementById(element).style.display = "none"
 }
+function opac() {
+  var x = document.querySelectorAll(".case");
+var i;
+for (i = 0; i < x.length; i++) {
+    x[i].style.opacity = "0.1";
+}}
+function opacshow() {
+  var x = document.querySelectorAll(".case");
+var i;
+for (i = 0; i < x.length; i++) {
+    x[i].style.opacity = "1";
+}}
 //all the functions below are a hide and show function for the divs under each tab
 
 function changeb() {
@@ -61,6 +73,7 @@ function fire() {
   show('off-button')
   show('on-angle')
   hide('on-button')
+
 }
 //opposite of above but if pressed either angle button poof and the drit is gone
 function fireoff() {
