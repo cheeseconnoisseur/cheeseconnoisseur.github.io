@@ -7,8 +7,11 @@ function openColour(t, e, n, el) {
 
   ; // Show the specific tab content
   document.getElementById(t).style.display = "block";
+  /* shows the content for the specific tab*/
   document.getElementById(el).style.display = "block";
   var con = ["electronicsman", "codeman", "bigman","introman","otherman"];
+  /*from an array it removes the tab option selected and works thru
+  the array hiding all the other tab contents */
 con.splice( con.indexOf(el), 1 );
 con.forEach( function(s) {
       document.getElementById(s).style.display = "none";
@@ -26,13 +29,14 @@ var arrayLength = con.length;
     // Add the specific color to the button used to open the tab content
     e.style.backgroundColor = n
 }
-
+/*non hard voding way of showing or hiding anything */
 function show(element){
   document.getElementById(element).style.display = "block"
 }
 function hide(element){
   document.getElementById(element).style.display = "none"
 }
+/*opacity for the case when fireworks begin */
 function opac() {
   var x = document.querySelectorAll(".case");
 var i;

@@ -8,7 +8,7 @@ body {
     width:100%;
 }
 
-/*main shit here*/
+/*-----main shit here----*/
 
 /*styling for the five buttons at the top*/
 .tablink {
@@ -30,6 +30,7 @@ body {
     text-align: center;
 }
 
+/*col1/2 stylinng */
 .col2 {
 	background-size: cover;
 
@@ -44,14 +45,14 @@ width:60%;
 float:left;
 background-color: #f6f6f6;
 }
-
+/* grid encasing the col1/2 */
 .grid{
 	display: flex;
 background-color: #f6f6f6;
 align-items: stretch;
 }
 
-/*hover shit here*/
+/*-----hover shit here-----*/
 .introduction:hover {
 width:100%;
 }
@@ -94,7 +95,8 @@ width:45%;
     background-color: #777;
 }
 
-/*the content for the main page */
+/*-----the content for the main page----*/
+/*to avoid hard coding ive made some main and then for specific elemtns they have there secondary class */
 .content {
 	position: center;
 	font-family: Arial;
@@ -130,8 +132,8 @@ float:none;
 .col1.p4{
 		background-color: #C8C8C8
 }
-.col1.p4{
-		background-color: #	#D8D8D8
+.col1.p1{
+		background-color:	#D8D8D8
 }
 .case{
 	float:inherit;
