@@ -127,7 +127,12 @@ float:none;
 	background-repeat: no-repeat;
 	background-size: cover
 }
-
+.col1.p4{
+		background-color: #C8C8C8
+}
+.col1.p4{
+		background-color: #	#D8D8D8
+}
 .case{
 	float:inherit;
 }
