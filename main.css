@@ -110,7 +110,7 @@ width:45%;
 .introduction {
 	height: auto;
 	width:95%;
-	position: centre
+	position: centre;
 	text-align: center;
 float:none;
 	background-color: #ffffff;
@@ -129,14 +129,27 @@ float:none;
 	background-repeat: no-repeat;
 	background-size: cover
 }
+.p6{
+		background: url(imgs/godleft.jpg) center;
+	background-color: #f6f6f6;
+	background-repeat: no-repeat;
+	background-size: cover
+}
 .col1.p4{
 		background-color: #C8C8C8
 }
 .col1.p1{
 		background-color:	#D8D8D8
 }
+.col1.p5{
+		background-color:	#C8C8C8
+}
 .case{
 	float:inherit;
+}
+.spacer{
+	width:100%;
+	padding-top: 20px
 }
 
 /*all the .button crap is for the animation meaning i had to add two classes to most of the buttons */
