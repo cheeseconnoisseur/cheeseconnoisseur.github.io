@@ -52,7 +52,7 @@ for (i = 0; i < x.length; i++) {
 
 
 function changeb() {
-  var t = document.body.style.backgroundImage = "url(imgs/jlogo.png)";
+  var t = document.body.style.backgroundImage = "url(images/jlogo.png)";
 }
 
 /*these two here are the ones that are called when the firework button is pressed
