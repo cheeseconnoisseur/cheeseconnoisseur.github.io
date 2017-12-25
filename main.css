@@ -303,7 +303,7 @@ td {
 }
 
 /*for mobile...*/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 .tablink{
 	font-size: 10px;
 }
