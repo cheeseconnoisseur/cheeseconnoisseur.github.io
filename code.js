@@ -29,7 +29,7 @@ var arrayLength = con.length;
     // Add the specific color to the button used to open the tab content
     e.style.backgroundColor = n
 }
-/*non hard voding way of showing or hiding anything */
+/*non hard coding way of showing or hiding anything */
 function show(element){
   document.getElementById(element).style.display = "block"
 }
@@ -49,7 +49,7 @@ var i;
 for (i = 0; i < x.length; i++) {
     x[i].style.opacity = "1";
 }}
-//all the functions below are a hide and show function for the divs under each tab
+
 
 function changeb() {
   var t = document.body.style.backgroundImage = "url(imgs/jlogo.png)";
@@ -79,7 +79,7 @@ function fire() {
   hide('on-button')
 
 }
-//opposite of above but if pressed either angle button poof and the drit is gone
+//opposite of above but if pressed either angle button poof and the dirt is gone
 function fireoff() {
   hide('canvas')
   show('on-button')

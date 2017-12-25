@@ -11,19 +11,22 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-111477944-1');
 </script>
+<!--a font -->
 <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
 	<link rel="stylesheet" href="main.css">
 	<script src="code.js"></script>
-	<script src="jquery.js"></script>
+	<!--jquery plugin didnt even use it but oh well -->
+	<script src="jquery\jquery-3.2.1.min.js"></script>
+	<!--adjusts viewport for phones -->
   <meta name="HandheldFriendly" content="true" />
 <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
 <meta name="arturodezon.me" content="HTML,CSS,XML,JavaScript">
 <meta name="arturo dezon" content="projects">
 	</head>
 
+<!-- the content showed at the top for when the electronics tab is selected-->
 	<div id="electronics" class="tabcontent">
 	<h3>Electroics Stuff</h3>
 	<p>Arduinos , hexapods and joes</p>
@@ -47,12 +50,13 @@
 	<h3>Other</h3>
 	<p>Other stuff</p>
 </div>
+<!--this is a 'github corner' thanks to : https://github.com/tholman/github-corners-->
 <a href="https://github.com/cheeseconnoisseur" class="github-corner gh" aria-label="View shit on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
-
+<!--basically i repeat the tabc ontent divs because without them the js stick up
+plugin would cause the space between the top of the page and where the nav bar ends
+to dissapear sp i use a repetition of the divs that are never visible as a place holder.-->
 <div class="container">
 	<div class="navbar-wrapper">
-
-
 							<!-- the content showed at the top for when the elctronics tab is selected-->
 							<div id="electronics" class="tabcontent">
 							<h3>Electroics Stuff</h3>
@@ -82,18 +86,162 @@
 						<!--the five buttons that go under the content each button uses the opencolour function which uses the
 						content above to make the navigation thing idk and each button also makes the other divs styles : none
 						so only the right stuff is shown uno -->
-						<button class="tablink button" onclick="openColour('electronics', this, '#FF5722');electronicsshow();codehide();androidhide();otherhide();introhide()" ><span>Electronics</span></button>
-						<button class="tablink button" onclick="openColour('code', this, '#B2FF59');codeshow();androidhide();electronicshide();otherhide();introhide()"><span>Code</span></button>
-						<button class="tablink button" onclick="openColour('welcome', this, '#673AB7');electronicshide();codehide();androidhide();otherhide();introshow()" id="defaultOpen" ><span>Welcome</span></button>
-						<button class="tablink button" onclick="openColour('android', this, '#42A5F5');androidshow();codehide();electronicshide();otherhide();introhide()"><span>Android</span></button>
-						<button class="tablink button" onclick="openColour('other', this, '#FFA726');othershow();androidhide();codehide();electronicshide();introhide()"><span>Other/Downloads</span></button>
+						<button class="navtab tablink button" onclick="openColour('electronics', this, '#FF5722', 'electronicsman')" ><span>Electronics</span></button>
+						<button class="navtab tablink button" onclick="openColour('code', this, '#B2FF59', 'codeman')"><span>Code</span></button>
+						<button class="navtab tablink button" onclick="openColour('welcome', this, '#673AB7','introman')" id="defaultOpen" ><span>Welcome</span></button>
+						<button class="navtab tablink button" onclick="openColour('android', this, '#42A5F5','bigman')"><span>Android</span></button>
+						<button class="navtab tablink button" onclick="openColour('other', this, '#FFA726','otherman')"><span>Other/Downloads</span></button>
 						</div>
 
 	</div>
-		</div><!-- End Navbar -->
-	<body>
-	<!-- link to js file? idk why i added it twice-->
+</div><!-- navbar ends here -->
+
+	<body id="body">
+	<!-- link to js file? idk but i didnt know where to put it so i added it everywhere
+and im scared to take it out becasue the whole js might not be called.-->
 	<script src="code.js"></script>
+
+
+	<!--content for when intro is selected -->
+  <div id="introman" >
+ <!-- the buttons too turn the firworks on or off /turn the x/y on or off/ the x/y
+ will ony be there if the fireworks are on.// the fireworl button also makes the angle button visible.-->
+  <canvas id="canvas"></canvas>
+	<!--allcontent has styling for all the content later on-->
+	<div id="allcontent" class="allcontent">
+		<!--i didnt even need the wrappyatthetoppy div but i just love the name -->
+		<div id="wrappyatthetoppy">
+		<div id= "fireworkbuttons" class="contentwel content">
+	<div class="buttonplacement">
+  <button id="on-button" class="tablink firebutton button" onclick="fire();lolol();opac()"><span><h1>fireworks:on</h1></span> </button>
+  <button id="off-button"class="tablink fireoffbutton button" onclick="fireoff();opacshow()"><span><h1>fireworks:off</h1><h6>gracias:github.com/shreyaspandit</h6></span></button>
+  <button id="on-angle" class="tablink fireanglebutton button" onclick="show('anglex');show('angley');hide('on-angle');show('off-angle')"><span><h1>fire x/y:on</h1><h6>test</h6></span> </button>
+  <button id="off-angle"class="tablink fireanglebutton button" onclick="hide('anglex');hide('angley');hide('off-angle');show('on-angle')"><span><h1>fire x/y:off</h1><h6>test</h6></span></button>
+</div>
+</div>
+<p>&nbsp;</p>
+<!--this is where the angles are displayed when they become :block  -->
+<h1 id = "anglex">angle</h1>
+<h1 id = "angley">angle</h1>
+<div id="case" class = "case">
+	<!--first introduction still working on centering it ik it sounds easy but because it all works
+on float:left its hard -->
+<div id="introduction" class="introduction content">
+  <h1>welcome
+  <h2>to this lit site
+  <h3> use the above tabs to navigate where youd like to go
+<h4>(downlods are in other/downlads)
+  <h5> yw
+  <h6> np
+	</div>
+	</div>
+</div>
+<!--case for the first section -->
+<div id="case" class = "case">
+	<!--parent for the 2 collums -->
+	<div id="twogrid"class="grid">
+		<!--coll 1 -->
+<div id="col1" class="col1 p1 content">
+<p style = "font-family: 'Roboto Slab'
+;font-size: 40px;
+		color: #444;"> who am I? </p>
+	<p>&nbsp;</p>
+	<h3>Idk tbh
+<p>&nbsp;</p>
+		<p style = "font-family: 'Roboto Slab'
+		;font-size: 25px;
+				color: #444;">lit website to show off projects and stuff no <strike>gingers</strike> ginger beer allowed,also planning to start a blog soon, if you DO find any bugs dont laugh and say "hoho look at this bug ha html king" just kindly point out then laugh gracias mucho esta parte esta en espanol buena suerte entendiendolo hola big man i gotta make this a tiny bit longer to show the animation because they use a flex box to make them equal hieghts yeah there you go learn somin new everyday ooof</p>
+					<p>&nbsp;</p>
+						<p>&nbsp;</p>
+</div>
+<!-- col2-->
+<div id="col2" class="col2 p2 content">
+	<p>&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="spacer">
+	<p>&nbsp;</p>
+</div>
+<!--overall case -->
+<div id="case" class = "case">
+	<!--parent for the flex box for two things -->
+	<div id="twogrid"class="grid">
+<!--collum1 -->
+		<div id="col2" class="col2 p3 content">
+			<p>&nbsp;</p>
+		</div>
+<!--collum 2-->
+<div id="col1" class="col1 p4 content">
+<p style = "font-family: 'Roboto Slab'
+;font-size: 40px;
+		color: #444;"> About and Stuff </p>
+	<p>&nbsp;</p>
+	<h3>Idk tbh
+<p>&nbsp;</p>
+		<p style = "font-family: 'Roboto Slab'
+		;font-size: 25px;
+				color: #444;">err I made this in like 5 days idk Its in HTML CSS JS and im using jquery and the stick up js plugin also thanks to shreyas i kinda borrowed his code and adapted it for the fireworks button. ill show off stuff here i might start a blog who knows but im yet to figure out subdomains so yeah btw theres an easter egg on the downlaods page its lit so yeah.check out the code in github ive anotatted everything so its acc understandable and only half of the js is hardcoded.PS i still havent made a function that stops the fireworks so they carry on behind the scenes when you turn them off so lowkey refresh the page if the school computers cant handle it/</p>
+					<p>&nbsp;</p>
+						<p>&nbsp;</p>
+</div>
+
+
+</div>
+<div class="spacer">
+	<p>&nbsp;</p>
+</div>
+</div>
+
+<!--case for the third section -->
+<div id="case" class = "case">
+	<!--parent for the 2 collums -->
+	<div id="twogrid"class="grid">
+		<!--coll 1 -->
+<div id="col1" class="col1 p5 content">
+<p style = "font-family: 'Roboto Slab'
+;font-size: 40px;
+		color: #444;"> What is this </p>
+	<p>&nbsp;</p>
+	<h3>ffs idk
+<p>&nbsp;</p>
+		<p style = "font-family: 'Roboto Slab'
+		;font-size: 25px;
+				color: #444;">Somebody once told me the world is gonna roll me
+I ain't the sharpest tool in the shed
+She was looking kind of dumb with her finger and her thumb
+In the shape of an "L" on her forehead
+
+Well the years start coming and they don't stop coming
+Fed to the rules and I hit the ground running
+Didn't make sense not to live for fun
+Your brain gets smart but your head gets dumb
+So much to do, so much to see
+So what's wrong with taking the back streets?
+You'll never know if you don't go
+You'll never shine if you don't glow
+
+Hey now, you're an all-star, get your game on, go play
+Hey now, you're a rock star, get the show on, get paid
+And all that glitters is gold
+Only shooting stars break the mold</p>
+					<p>&nbsp;</p>
+						<p>&nbsp;</p>
+</div>
+<!-- col2-->
+<div id="col2" class="col2 p6 content">
+	<p>&nbsp;</p>
+</div>
+</div>
+</div>
+
+<div class="spacer">
+	<p>&nbsp;</p>
+</div>
+
+</div>
+</div>
 
 			<!--this is the body content for when Android is selected -->
 			<div id="bigman">
@@ -188,52 +336,11 @@
   </table>
   </div>
 
-  <!--content for when intro is selected -->
-  <div id="introman" >
- <!-- the buttons too turn the firworks on or off /turn the x/y on or off/ the x/y
- will ony be there if the fireworks are on.// the fireworl button also makes the angle button visible.-->
-  <canvas id="canvas"></canvas>
-  <button id="on-button" class="tablink2 button" onclick="fire()"><span><h1>fireworks:on</h1></span> </button>
-  <button id="off-button"class="tablink4 button" onclick="fireoff();angleyhide();anglexhide()"><span><h1>fireworks:off</h1><h6>gracias:github.com/shreyaspandit</h6></span></button>
-  <button id="on-angle" class="tablink3 button" onclick="anglexshow();angleyshow();onanglehide();offangleshow()"><span><h1>fire x/y:on</h1><h6>test</h6></span> </button>
-  <button id="off-angle"class="tablink3 button" onclick="anglexhide();angleyhide();offanglehide();onangleshow()"><span><h1>fire x/y:off</h1><h6>test</h6></span></button>
 
-<div class="allcontent">
-
-	<div class="contentwel content">
-  <h1>welcome
-  <h2>to this lit site
-  <h3> use the above tabs to navigate where youd like to go
-<h4>(downlods are in other/downlads)
-  <h5> yw
-  <h6> np
-	</div>
-	<div class="andwhoami">
-<div id="whoami" class="contentme content">
-<p style = "font-family: 'Roboto Slab'
-;font-size: 40px;
-		color: #444;"> who am I? </p>
-	<p>&nbsp;</p>
-	<h3>Idk tbh
-<p>&nbsp;</p>
-		<p style = "font-family: 'Roboto Slab'
-		;font-size: 22px;
-				color: #444;">lit website to show off projects and stuff no <strike>gingers</strike> ginger beer allowed,also planning to start a blog soon, if you DO find any bugs dont laugh and say "hoho look at this bug ha html king" just kindly point out then laugh gracias mucho esta parte esta en espanol buena suerte entendiendolo hola big man</p>
-</div>
-<div id="whoi" class="contentmei content">
-	<p>&nbsp;</p>
-</div>
-</div>
-
-
-
-</div>
-</div>
 
   <footer>
 
-  <h1 id = "anglex">angle</h1>
-  <h1 id = "angley">angle</h1>
+
 
   </footer>
 
@@ -242,14 +349,12 @@
 
 
 	<script src="jquery\jquery-3.2.1.min.js"></script>
+	<!--stickUp jquery file -->
 
-	<!-- ### IMPORTANT ### stickUp javascript file -->
-	<!-- ######################################### -->
 	<script src="stickplug\stickUp.min.js"></script>
-	<!-- ######################################### -->
+	<!-- stickup js file -->
 
-	<!-- ### IMPORTANT ### stickUp options in use -->
-	<!-- ######################################## -->
+	<!-- stickUp options in use -->
 	<script type="text/javascript">
 		jQuery(function($) {
 			$(document).ready( function() {
@@ -257,6 +362,14 @@
 			});
 		});
 	</script>
+<script>
+$(document).ready(function(){
+    var div = $("div");
+    $("#off-button").click(function(){
+        div.stop(true);
+    });
+});
+</script>
 	</body>
 
 </html>
