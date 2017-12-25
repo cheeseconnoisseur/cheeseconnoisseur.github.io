@@ -338,10 +338,21 @@ td {
 
 .col2{
 	width:100%;
-	height:200px;
+	height:275px;
+display: inline-block;
+clear: left;}
+
+.col2.p3{
+	width:100%;
+	height:235px;
 display: inline-block;
 clear: left;
-
+}
+.col2.p6{
+	width:100%;
+	height:235px;
+display: inline-block;
+clear: left;
 }
 .grid{
 display: inline;
