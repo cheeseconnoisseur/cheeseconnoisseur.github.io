@@ -118,19 +118,19 @@ float:none;
 
 }
 .p2{
-		background: url(imgs/meme.gif) center;
+		background: url(images/meme.gif) center;
 	background-color: #f6f6f6;
 	background-repeat: no-repeat;
 	background-size: cover
 }
 .p3{
-		background: url(imgs/trump.gif) center;
+		background: url(images/trump.gif) center;
 	background-color: #f6f6f6;
 	background-repeat: no-repeat;
 	background-size: cover
 }
 .p6{
-		background: url(imgs/godleft.jpg) center;
+		background: url(images/godleft.jpg) center;
 	background-color: #f6f6f6;
 	background-repeat: no-repeat;
 	background-size: cover
@@ -315,7 +315,7 @@ here its mostly colour or visibility*/
 
 #electronics {background-color:#FF5722;}
 #code {background-color:#B2FF59;}
-#welcome {background: url(imgs/source.gif) center;}
+#welcome {background: url(images/source.gif) center;}
 #android {background-color:#42A5F5;}
 #other {background-color:#FFA726;}
 #other2 {background-color:#FFA726;}
