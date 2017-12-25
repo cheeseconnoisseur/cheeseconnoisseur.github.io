@@ -65,7 +65,7 @@ width:65%;}
 .col2:hover {
 width:45%;
 }
-.col2:hover + .contentme {
+.col2:hover + .col2 {
     width:50%
 }
 
@@ -202,6 +202,11 @@ width is 100%*/
 .firebutton{
     width: 100%;
 }
+
+.downloadbutton{
+    width: 98%;
+		border-left: 2px solid;
+}
 /* styling for the firework angle buttons, uses the same styling as the others just the
 width is 20% to leave room for the firework off button*/
 .fireanglebutton {
@@ -239,7 +244,7 @@ a:hover{
 	font-family: courier;
     background-color: #f44336;
     color: white;
-    padding: 14px 25px;
+    padding: 14px;
     text-align: center;
     text-decoration: none;
 display: inline-block;}
@@ -265,8 +270,10 @@ display: inline-block;}
 	 height: 40px;
 	 position:relative;
     z-index:0;
+		width: 100%
   -webkit-box-shadow: 0 7px 4px -2px #1a1a1a;
           box-shadow: 0px 7px 4px -2px #1a1a1a;}
+
 
 
 .tabcontent3{
@@ -338,6 +345,17 @@ clear: left;
 }
 .grid{
 display: inline;
+}
+.col1:hover {
+width:100%;}
+.col1:hover + .col2 {
+    width:100%
+}
+.col2:hover {
+width:100%;
+}
+.col2:hover + .col2 {
+    width:100%
 }
 }
 
