@@ -9,6 +9,7 @@ function openColour(t, e, n, el) {
   document.getElementById(t).style.display = "block";
   /* shows the content for the specific tab*/
   document.getElementById(el).style.display = "block";
+  hide('vbtabl');
   var con = ["electronicsman", "codeman", "bigman","introman","otherman"];
   /*from an array it removes the tab option selected and works thru
   the array hiding all the other tab contents */
@@ -28,6 +29,11 @@ var arrayLength = con.length;
 
     // Add the specific color to the button used to open the tab content
     e.style.backgroundColor = n
+}
+
+function tabby(){
+
+
 }
 /*non hard coding way of showing or hiding anything */
 function show(element){

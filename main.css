@@ -117,6 +117,9 @@ float:none;
 
 
 }
+.padtext{
+	padding-bottom: 50px
+}
 .p2{
 		background: url(images/meme.gif) center;
 	background-color: #f6f6f6;
@@ -195,7 +198,34 @@ float:none;
 
 .navtab{
 	color: white;
-	width: 20%
+	width: 20%;
+	z-index:5;
+}
+.navtab2{
+	color: white;
+	z-index:5;
+	padding-left: 30px;
+	float: none
+}
+
+.jbin{
+	width:100%;
+	background-color: black;
+	color: green;
+	font-size: 10px;
+}
+.bigman{
+
+}
+.sideting{
+	overflow:auto;
+	width: 15%;
+ height: 100vh;
+ background-color: #262626;
+ float: left;
+ padding-left: 0px;
+ padding-top: 0px;
+ color: #ffffff;
 }
 /* styling for the firework on button, uses the same styling as the others just the
 width is 100%*/
@@ -292,9 +322,35 @@ tr{
 }
 
 td {
-	padding: 30px;
+
+	padding: 25px;
+	width: 590px;
+	height: 330px;
+	/*padding: 30px;
 	width: 50%;
-	height: 50%;
+	height: 50%;*/
+   margin: 0 auto;
+}
+
+td.td2 {
+
+	padding: 25px;
+	width: 490px;
+	height: 260px;
+	/*padding: 30px;
+	width: 50%;
+	height: 50%;*/
+   margin: 0 auto;
+}
+
+td.td3 {
+
+	padding: 25px;
+	width: 300px;
+	height: 130px;
+	/*padding: 30px;
+	width: 50%;
+	height: 50%;*/
    margin: 0 auto;
 }
 
@@ -310,7 +366,50 @@ td {
 	 border-radius: 8px;
 }
 
+.project_image2 {
+
+	max-width: 93%;
+	max-height: 93%;
+	display: block;
+	margin: auto;
+	box-shadow: 0 0 80px black;
+	 -webkit-transition: all 2s ease;
+	 border-radius: 8px;
+}
+
 /*for mobile...*/
+@media only screen and (max-width: 1300px) {
+.tablink{
+	font-size: 13px;
+}
+
+	.col1.p1{
+		font-size: 19px;
+	}
+	.col1.p4{
+		font-size: 19px;
+	}
+	.col1.p5{
+		font-size: 19px;
+	}
+	.col1{
+			font-size: 17px;
+					color: #444;}
+
+
+					.col2{
+					display: inline-block;
+					clear: left;}
+
+					.col2.p3{
+					clear: left;
+					}
+					.col2.p6{
+					clear: left;
+					}
+
+				}
+
 @media only screen and (max-width: 600px) {
 .tablink{
 	font-size: 10px;
@@ -336,6 +435,8 @@ td {
 					 padding-bottom: 0px
 
 	}
+
+
 
 .col2{
 	width:100%;
@@ -389,6 +490,7 @@ here its mostly colour or visibility*/
 #joescolour {background-color:#00979F}
 
 #table {margin:auto}
+#table2 {height: 100vh;}
 #welcome {text-align: center;}
 
 #electronics {background-color:#FF5722;}
