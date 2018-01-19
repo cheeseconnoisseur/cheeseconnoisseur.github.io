@@ -42,6 +42,12 @@ function show(element){
 function hide(element){
   document.getElementById(element).style.display = "none"
 }
+function orangise(element){
+  document.getElementById(element).style.backgroundColor = "#ff8000"
+}
+function unorangise(element){
+  document.getElementById(element).style.backgroundColor = "#555"
+}
 /*opacity for the case when fireworks begin */
 function opac() {
   var x = document.querySelectorAll(".case");

@@ -25,14 +25,14 @@
 <meta name="arturodezon.me" content="HTML,CSS,XML,JavaScript">
 <meta name="arturo dezon" content="projects">
 	</head>
-
+<div class = "bigman">
 <!-- the content showed at the top for when the electronics tab is selected-->
 	<div id="electronics" class="tabcontent">
 	<h3>Electroics Stuff</h3>
 	<p>Arduinos , hexapods and joes</p>
 </div>
 <!-- the content showed at the top for when the code tab is selected-->
-<div id="code" class="tabcontent">
+<div id="projects" class="tabcontent">
 	<h3>Code Projects</h3>
 	<p>Programs i make in vb and python that do cool stufff uno</p>
 </div>
@@ -52,6 +52,7 @@
 </div>
 <!--this is a 'github corner' thanks to : https://github.com/tholman/github-corners-->
 <a href="https://github.com/cheeseconnoisseur" class="github-corner gh" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+</div>
 <!--basically i repeat the tabc ontent divs because without them the js stick up
 plugin would cause the space between the top of the page and where the nav bar ends
 to dissapear sp i use a repetition of the divs that are never visible as a place holder.-->
@@ -87,7 +88,7 @@ to dissapear sp i use a repetition of the divs that are never visible as a place
 						content above to make the navigation thing idk and each button also makes the other divs styles : none
 						so only the right stuff is shown uno -->
 						<button class="navtab tablink button" onclick="openColour('electronics', this, '#FF5722', 'electronicsman')" ><span>Electronics</span></button>
-						<button class="navtab tablink button" onclick="openColour('code', this, '#B2FF59', 'codeman')"><span>Code</span></button>
+						<button class="navtab tablink button" onclick="openColour('code', this, '#B2FF59', 'codeman')"><span>Projects</span></button>
 						<button class="navtab tablink button" onclick="openColour('welcome', this, '#673AB7','introman')" id="defaultOpen" ><span>Welcome</span></button>
 						<button class="navtab tablink button" onclick="openColour('android', this, '#42A5F5','bigman')"><span>Android</span></button>
 						<button class="navtab tablink button" onclick="openColour('other', this, '#FFA726','otherman')"><span>Other</span></button>
@@ -244,7 +245,7 @@ Only shooting stars break the mold</p>
       <image class="project_image" src="images/and.PNG">
       </a>
 	  <h2> my dank app
-	  <h3>an open source copypasta app with a meme studio
+	  <h3 class = "padtext">an open source copypasta app with a meme studio
     </td>
 
     <td>
@@ -252,7 +253,7 @@ Only shooting stars break the mold</p>
       <image class="project_image" src="images/and.PNG">
       </a>
 	  <h2> translator
-	  <h3>An open source app that translates British English into "Heavy Slang", includes the options to copy to clipboard,share and an in-app word definer that uses "urbandictionary.com
+	  <h3 class = "padtext">An open source app that translates British English into "Heavy Slang", includes the options to copy to clipboard,share and an in-app word definer that uses "urbandictionary.com
     </td>
   </tr>
   </tbody>
@@ -261,26 +262,92 @@ Only shooting stars break the mold</p>
 
   <!-- content for when code is selected-->
   <div id="codeman">
-			<table id="table">
+		<p class = "jbin">01101000 01110100 01110100 01110000 00111010 00101111 00101111 01101010 01101111 01100101 01101001 01100100 01100100 01101111 01101110 00101110 01101101 01100101 00101111</p>
+		<div>
+		<div class = "sideting">
+			<ul>
+			<li id = "pyb" class="navtab2 tablink button" onclick="show('pytabl');hide('vbtabl');orangise('pyb');unorangise('vbb')"><span>python</span></li>
+			<li class="navtab2 tablink button" ><span>JS</span></li>
+			<li id = "vbb" class="navtab2 tablink button" onclick="show('vbtabl');hide('pytabl');orangise('vbb');unorangise('pyb')"><span>VB</span></li>
+		</ul>
+		</div>
+
+		<div id="pytabl" style="margin-left:15%">
+		<table id="table2">
   <tbody><tr>
-    <td>
-      <a href="https://github.com/cheeseconnoisseur/changecalc">
-      <image class="project_image" src="images/cashier.jpg">
+    <td class = "td3">
+      <a href="https://github.com/cheeseconnoisseur/webspider">
+      <image class="project_image2" src="images/spi.jpg">
       </a>
-	  <h2> change calculator
-	  <h3>a console £ change calculator with customizable settings
+	  <h2> web spider
+	  <h3 class = "padtext">travels the web dumping all <\p> text into a txt file
     </td>
 
-    <td>
+    <td class = "td3">
+      <a href="https://github.com/cheeseconnoisseur/pychartanalysis">
+      <image class="project_image2" src="images/stock.jpg">
+      </a>
+	  <h2> ML on stocks data
+	  <h3 class = "padtext">an "intersting" attempt on simple linear regression on stock data
+    </td>
+		<td class = "td3">
+			<a href="https://github.com/cheeseconnoisseur/bigmanbot">
+			<image class="project_image2" src="images/telegram.jpg">
+			</a>
+		<h2> telegram big man bot
+		<h3 class = "padtext">cool bot for telegram
+		</td>
+  </tr>
+	<tr>
+		<td class = "td3">
+      <a href="https://github.com/cheeseconnoisseur/chembalancer">
+      <image class="project_image2" src="images/chem.png">
+      </a>
+	  <h2> chem balancer
+	  <h3 class = "padtext">balancing equations is against the human rights act
+    </td>
+
+    <td class = "td3">
+      <a href="https://github.com/cheeseconnoisseur/bigmanbot-discord">
+      <image class="project_image2" src="images/discord.png">
+      </a>
+	  <h2> discord bigman bot
+	  <h3 class = "padtext">cool bot for discord
+    </td>
+
+  </tr>
+  </tbody>
+  </table>
+</div>
+
+		<div id="vbtabl" style="margin-left:15%">
+		<table id="table2">
+  <tbody><tr>
+    <td class = "td2">
+      <a href="https://github.com/cheeseconnoisseur/changecalc">
+      <image class="project_image2" src="images/cashier.jpg">
+      </a>
+	  <h2> change calculator
+	  <h3 class = "padtext">a console £ change calculator with customizable settings
+    </td>
+
+    <td class = "td2">
       <a href="https://github.com/cheeseconnoisseur/virtualpetvb">
-      <image class="project_image" src="images/fish.jpg">
+      <image class="project_image2" src="images/fish.jpg">
       </a>
 	  <h2> a virtual pet fish
-	  <h3>a virtual fish pet coded in vb
+	  <h3 class = "padtext">a virtual fish pet coded in vb
     </td>
   </tr>
   </tbody>
   </table>
+</div>
+
+</div>
+	<!-- <div class = "sideting">
+		<p>lol</p>
+		<article class="navtab2 tablink button"><span>Other</span></article>
+	</div> -->
   </div>
   <!--content for when electroics is selected -->
     <div id="electronicsman">
@@ -295,9 +362,9 @@ Only shooting stars break the mold</p>
     </td>
 
     <td>
-			<div style:"width:auto">
-      <a style:"width:auto" href="https://www.youtube.com/watch?v=knoOXBLFQ-s"><video controls autoplay = "autoplay"loop="loop"><source src="images/blink.mp4" type="video/mp4"><source src="movie.ogg" type="video/ogg">Your browser does not support the video tag.</video></a>
-</div>
+			<a href="http://joeiddon.me/club/">
+      <image class="project_image" src="images/hexa.jpg">
+      </a>
 		<h2> hexapod
 	  <h3>...in progress..
     </td>
