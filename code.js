@@ -10,6 +10,7 @@ function openColour(t, e, n, el) {
   /* shows the content for the specific tab*/
   document.getElementById(el).style.display = "block";
   hide('vbtabl');
+  orangise('pyb');
   var con = ["electronicsman", "codeman", "bigman","introman","otherman"];
   /*from an array it removes the tab option selected and works thru
   the array hiding all the other tab contents */
