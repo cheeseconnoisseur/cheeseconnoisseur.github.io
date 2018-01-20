@@ -234,9 +234,9 @@ float:none;
 
 }
 .sideting{
-	overflow:auto;
+
 	width: 15%;
- height: 100vh;
+	height: 100vh;
  background-color: #262626;
  float: left;
  padding-left: 0px;
@@ -394,6 +394,31 @@ td.td3 {
 }
 
 /*for mobile...*/
+@media only screen and (min-width: 1400px) {
+	td.td2 {
+
+		padding: 25px;
+		width: 540px;
+		height: 350px;
+		/*padding: 30px;
+		width: 50%;
+		height: 50%;*/
+	   margin: 0 auto;
+	}
+
+	td.td3 {
+
+		padding: 25px;
+		width: 450px;
+		height: 250px;
+		/*padding: 30px;
+		width: 50%;
+		height: 50%;*/
+	   margin: 0 auto;
+	}
+
+				}
+
 @media only screen and (max-width: 1300px) {
 .tablink{
 	font-size: 13px;
@@ -510,7 +535,7 @@ here its mostly colour or visibility*/
 #welcome {text-align: center;}
 
 #electronics {background-color:#FF5722;}
-#code {background-color:#B2FF59;}
+#projects {background-color:#B2FF59;}
 #welcome {background: url(images/source.gif) center;}
 #android {background-color:#42A5F5;}
 #other {background-color:#FFA726;}
