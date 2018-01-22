@@ -360,6 +360,7 @@ td.td2 {
 }
 
 td.td3 {
+	float: left;
 
 	padding: 25px;
 	width: 300px;
