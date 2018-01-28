@@ -1,12 +1,15 @@
 function Ball(){
   this.pos = createVector(width/2, height/2);
   this.r = random(60,120)
+  this.vel = createVector(0, 5);
+  this.acc = createVector();
 
   this.update = function(){
     //this.x = this.x + 1
     var mouse  = createVector(mouseX, mouseY);
     mouse.sub(this.pos);
-    mouse.setMag(3);
+    mouse.setMag(5);
+    this.vel.setMag(2.5)
     this.pos.add(mouse);
     if (this.pos.x >= right) {
       this.pos.x = right
@@ -15,6 +18,11 @@ function Ball(){
       this.pos.y = up
       //console.log(this.pos.y)
     }
+    this.pos.add(this.vel);
+
+
+
+
 
   }
 
